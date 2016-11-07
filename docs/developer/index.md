@@ -1,15 +1,15 @@
-## Developer Documentation
+# Developer Documentation
 
-### Developer onboarding 
+## Developer onboarding 
 
-### AGL Single-Sign-On (LF ID)
+## AGL Single-Sign-On (LF ID)
 
-### JIRA
+## JIRA
 
-### GERRIT
+## GERRIT
 
-### Submitting Code
+## Submitting Code
 
-### Subsystem Documentation
+## Subsystem Documentation
 
-##### Security Framework
+### Security Framework
