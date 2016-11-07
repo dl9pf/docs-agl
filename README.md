@@ -3,8 +3,8 @@
 
 ## User Documentation
 
-You will find the user documentation in the [docs/user](docs/user/index.md) folder.
+You will find the user documentation in the docs/user folder.
 
 ## Developer Documentation
 
-You will find the developer documentation in the [docs/developer](docs/developer/index.md) folder.
+You will find the developer documentation in the docs/developer folder.
