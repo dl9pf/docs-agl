@@ -5,18 +5,21 @@ MACHINE=all
 DOCTYPE=html
 HELP=0
 
+TOPDIR=`dirname $0`
+
+
 function exportdoc {
-        FILEDOC="../getting-started/machines/$1.md"
+        FILEDOC="$TOPDIR/machines/$1.md"
         if [ ! -e $FILEDOC ] ; then
                 echo "Document for $1 not found."
                 exit 1
         fi
-        FILETROUBLE="../getting-started/footers/$1-footer.md"
+        FILETROUBLE="$TOPDIR/footers/$1-footer.md"
         if [ ! -e $FILETROUBLE ] ; then
                 FILETROUBLE=""
         fi
         FILEEXPORT="$DOCTYPE/$1.$DOCTYPE"
-        pandoc ../getting-started/source-code.md $FILEDOC ../getting-started/troubleshooting.md $FILETROUBLE $FILECONFIG -o $FILEEXPORT
+        pandoc $TOPDIR/source-code.md $FILEDOC $TOPDIR/troubleshooting.md $FILETROUBLE $FILECONFIG -o $FILEEXPORT
         echo "Document exported to $DIREXPORT/$FILEEXPORT"
 }
 
@@ -67,7 +70,7 @@ mkdir -p "$DOCTYPE"
 
 if [ "all" == $MACHINE ] ; then
 	echo "Exporting documentation for all machines."
-	for TARGET in ../getting-started/machines/*.md
+	for TARGET in $TOPDIR/machines/*.md
 	do
 		TARGET=$(basename $TARGET)
 		TARGET=${TARGET%.*}
