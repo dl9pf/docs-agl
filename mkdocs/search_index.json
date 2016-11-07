@@ -1,0 +1,634 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "The Automotive Grade Linux Documentation\n\n\nUser Documentation\n\n\nYou will find the user documentation in the user folder.\n\n\nDeveloper Documentation\n\n\nYou will find the developer documentation in the developer folder.",
+            "title": "Home"
+        },
+        {
+            "location": "/#the-automotive-grade-linux-documentation",
+            "text": "",
+            "title": "The Automotive Grade Linux Documentation"
+        },
+        {
+            "location": "/#user-documentation",
+            "text": "You will find the user documentation in the user folder.",
+            "title": "User Documentation"
+        },
+        {
+            "location": "/#developer-documentation",
+            "text": "You will find the developer documentation in the developer folder.",
+            "title": "Developer Documentation"
+        },
+        {
+            "location": "/developer/app-framework/",
+            "text": "AGL Application Framework\n\n\nThis page summarizes all materials related to AGL Application Framework\n\n\nSource Code\n\n\nThe current code of AGL App-Framework is stored on AGL Code Repository. It's divided in the following projects:\n\n\n\n\nsrc/app-framework-main\n Main services\n\n\nsrc/app-framework-binder\n: Binder Daemon\n\n\nsrc/app-framework-demo\n Demos\n\n\n\n\nBuilding AGL with Application Framework support\n\n\nThe Application Framework can be added easily to an AGL build using the feature 'agl-appfw-smack'.\n\n\nTypically, the following command can be called to initialize AGL build:\n\n\n# meta-agl/scripts/aglsetup.sh -m porter agl-appfw-smack agl-demo agl-devel\n...\n# bitbake agl-demo-platform\n\n\n\nDocumentation\n\n\nTechnical documentation is maintained in the source code and should be browsable with the \nupcoming AGL documentation system\n\n\nTemporarily, a static documentation has been made in PDF format:\n\n\n\n\nIntroduction to Application Framework\n\n\nAppFW Core Documentation\n\n\nPrivileges Management\n\n\n\n\nSome extra guides are also available in PDF format:\n\n\n\n\nBuild your 1st AGL Application\n\n\nApplications Templates are available on \ngithub:iotbzh/app-framework-templates\n\n\n\n\nBindings Examples\n\n\nSome bindings are  available to quickstart new projects:\n\n\n\n\nGPS - see \ngithub:iotbzh/af-gps-binding\n\n\nOpenXC Reader - see \ngithub:iotbzh/txc-demo\n\n\nCPU/Memory stats - see \ngithub:iotbzh/txc-demo\n\n\nRadio - see \ngerrit:src/app-framework-binder\n\n\nAudio - see \ngerrit:src/app-framework-binder\n\n\n\n\nThe list is not exhaustive. \nPlease add other bindings here !\n\n\nDemos\n\n\n\n\nSimple HTML5 Demos apps (ported from Tizen) on \ngithub:iotbzh/afm-widget-examples\n\n\nInstallable package with \nTXC Demo Application\n\n\nApplications available in \ngerrit:app-framework-demo\n\n\n\n\nPresentations\n\n\n\n\nOct 16 - \nApplication Security Model - Status Update\n\n\nSept 16 - \nBuilding Applications with AGL Framework\n - Also visible in \nPDF version\n\n\nFeb 16 - \nHTML5 Apps for Automotive Systems\n\n\nFeb 16 - \nApplication \n Security Framework Proposal AGL 2.0\n\n\nJan 16 - \nSecurity Architecture Proposal\n\n\n\n\nHistory\n\n\nMotivation for rewriting the App. Framework\n\n\nTo get the background and motivation on why Application Framework has been rewritten:\n\n\n\n\nTizen Security: lessons learnt\n\n\nthis discussion\n\n\nLinux Automotive Security\n\n\n\n\nComparison/Relationship with Tizen\n\n\n                          Tizen           AGL\n                          ----------------------------------\nApp/OS isolation           yes            yes\nContainer option           no             possible\nNative App                 partial*       yes\nHTML5 App                  yes            yes\nCloud App                  No             yes\nUnified API (HTLM/Native)  No             yes\nservice as App**           No             yes\nAdding API    ***          core           core or App\nDevel model                bespoke        Standard Web",
+            "title": "Home"
+        },
+        {
+            "location": "/developer/app-framework/#agl-application-framework",
+            "text": "This page summarizes all materials related to AGL Application Framework",
+            "title": "AGL Application Framework"
+        },
+        {
+            "location": "/developer/app-framework/#source-code",
+            "text": "The current code of AGL App-Framework is stored on AGL Code Repository. It's divided in the following projects:   src/app-framework-main  Main services  src/app-framework-binder : Binder Daemon  src/app-framework-demo  Demos",
+            "title": "Source Code"
+        },
+        {
+            "location": "/developer/app-framework/#building-agl-with-application-framework-support",
+            "text": "The Application Framework can be added easily to an AGL build using the feature 'agl-appfw-smack'.  Typically, the following command can be called to initialize AGL build:  # meta-agl/scripts/aglsetup.sh -m porter agl-appfw-smack agl-demo agl-devel\n...\n# bitbake agl-demo-platform",
+            "title": "Building AGL with Application Framework support"
+        },
+        {
+            "location": "/developer/app-framework/#documentation",
+            "text": "Technical documentation is maintained in the source code and should be browsable with the  upcoming AGL documentation system  Temporarily, a static documentation has been made in PDF format:   Introduction to Application Framework  AppFW Core Documentation  Privileges Management   Some extra guides are also available in PDF format:   Build your 1st AGL Application  Applications Templates are available on  github:iotbzh/app-framework-templates",
+            "title": "Documentation"
+        },
+        {
+            "location": "/developer/app-framework/#bindings-examples",
+            "text": "Some bindings are  available to quickstart new projects:   GPS - see  github:iotbzh/af-gps-binding  OpenXC Reader - see  github:iotbzh/txc-demo  CPU/Memory stats - see  github:iotbzh/txc-demo  Radio - see  gerrit:src/app-framework-binder  Audio - see  gerrit:src/app-framework-binder   The list is not exhaustive.  Please add other bindings here !",
+            "title": "Bindings Examples"
+        },
+        {
+            "location": "/developer/app-framework/#demos",
+            "text": "Simple HTML5 Demos apps (ported from Tizen) on  github:iotbzh/afm-widget-examples  Installable package with  TXC Demo Application  Applications available in  gerrit:app-framework-demo",
+            "title": "Demos"
+        },
+        {
+            "location": "/developer/app-framework/#presentations",
+            "text": "Oct 16 -  Application Security Model - Status Update  Sept 16 -  Building Applications with AGL Framework  - Also visible in  PDF version  Feb 16 -  HTML5 Apps for Automotive Systems  Feb 16 -  Application   Security Framework Proposal AGL 2.0  Jan 16 -  Security Architecture Proposal",
+            "title": "Presentations"
+        },
+        {
+            "location": "/developer/app-framework/#history",
+            "text": "",
+            "title": "History"
+        },
+        {
+            "location": "/developer/app-framework/#motivation-for-rewriting-the-app-framework",
+            "text": "To get the background and motivation on why Application Framework has been rewritten:   Tizen Security: lessons learnt  this discussion  Linux Automotive Security",
+            "title": "Motivation for rewriting the App. Framework"
+        },
+        {
+            "location": "/developer/app-framework/#comparisonrelationship-with-tizen",
+            "text": "Tizen           AGL\n                          ----------------------------------\nApp/OS isolation           yes            yes\nContainer option           no             possible\nNative App                 partial*       yes\nHTML5 App                  yes            yes\nCloud App                  No             yes\nUnified API (HTLM/Native)  No             yes\nservice as App**           No             yes\nAdding API    ***          core           core or App\nDevel model                bespoke        Standard Web",
+            "title": "Comparison/Relationship with Tizen"
+        },
+        {
+            "location": "/developer/audio/",
+            "text": "AGL Audio Framework\n\n\nPulseaudio Plugin\n\n\nSource code is hosted on \ngerrit:staging/agl-audio-plugin\n\n\nDocumentation is available on \nIoT.bzh site",
+            "title": "Home"
+        },
+        {
+            "location": "/developer/audio/#agl-audio-framework",
+            "text": "",
+            "title": "AGL Audio Framework"
+        },
+        {
+            "location": "/developer/audio/#pulseaudio-plugin",
+            "text": "Source code is hosted on  gerrit:staging/agl-audio-plugin  Documentation is available on  IoT.bzh site",
+            "title": "Pulseaudio Plugin"
+        },
+        {
+            "location": "/developer/sec-blueprint/01-overview/",
+            "text": "title : Security BluePrint Overview\ndate  : 2016-07-06\ncategory: security\ntags: security, architecture, automotive, linux\nlayout: techdoc \n\n\n\n\nTable of Content\n\n\n\n\nTOC\n{:toc}\n\n\n\n\nIntroduction\n\n\nScope\n\n\nGlossary",
+            "title": "01 overview"
+        },
+        {
+            "location": "/developer/sec-blueprint/01-overview/#introduction",
+            "text": "",
+            "title": "Introduction"
+        },
+        {
+            "location": "/developer/sec-blueprint/01-overview/#scope",
+            "text": "",
+            "title": "Scope"
+        },
+        {
+            "location": "/developer/sec-blueprint/01-overview/#glossary",
+            "text": "",
+            "title": "Glossary"
+        },
+        {
+            "location": "/developer/sec-blueprint/02-plateform-security/",
+            "text": "title : platform Security\ndate  : 2016-06-30\ncategories: architecture, automotive\ntags: architecture, automotive, linux\nlayout: techdoc \n\n\n\n\nTable of Content\n\n\n\n\nTOC\n{:toc}\n\n\n\n\nPlatform Definition\n\n\nSecure boot\n\n\nCertificate and Key Management\n\n\nResource Management\n\n\nTrust Zone\n\n\nPlatform Software Update\n\n\nCritical Resource Protection\n\n\nUpdate\n\n\ncloud service infrastructure",
+            "title": "02 plateform security"
+        },
+        {
+            "location": "/developer/sec-blueprint/02-plateform-security/#platform-definition",
+            "text": "",
+            "title": "Platform Definition"
+        },
+        {
+            "location": "/developer/sec-blueprint/02-plateform-security/#secure-boot",
+            "text": "",
+            "title": "Secure boot"
+        },
+        {
+            "location": "/developer/sec-blueprint/02-plateform-security/#certificate-and-key-management",
+            "text": "",
+            "title": "Certificate and Key Management"
+        },
+        {
+            "location": "/developer/sec-blueprint/02-plateform-security/#resource-management",
+            "text": "",
+            "title": "Resource Management"
+        },
+        {
+            "location": "/developer/sec-blueprint/02-plateform-security/#trust-zone",
+            "text": "",
+            "title": "Trust Zone"
+        },
+        {
+            "location": "/developer/sec-blueprint/02-plateform-security/#platform-software-update",
+            "text": "",
+            "title": "Platform Software Update"
+        },
+        {
+            "location": "/developer/sec-blueprint/02-plateform-security/#critical-resource-protection",
+            "text": "",
+            "title": "Critical Resource Protection"
+        },
+        {
+            "location": "/developer/sec-blueprint/02-plateform-security/#update",
+            "text": "",
+            "title": "Update"
+        },
+        {
+            "location": "/developer/sec-blueprint/02-plateform-security/#cloud-service-infrastructure",
+            "text": "",
+            "title": "cloud service infrastructure"
+        },
+        {
+            "location": "/developer/sec-blueprint/03-security-concepts/",
+            "text": "title : Application Security Concepts\ndate  : 2016-06-30\ncategories: architecture, automotive\ntags: architecture, automotive, linux\nlayout: techdoc \n\n\n\n\nTable of Content\n\n\n\n\nTOC\n{:toc}\n\n\n\n\nSecurity Principles\n\n\nAccess Control\n\n\nSecure Boot\n\n\nApplications\n\n\nProcess Management",
+            "title": "03 security concepts"
+        },
+        {
+            "location": "/developer/sec-blueprint/03-security-concepts/#security-principles",
+            "text": "",
+            "title": "Security Principles"
+        },
+        {
+            "location": "/developer/sec-blueprint/03-security-concepts/#access-control",
+            "text": "",
+            "title": "Access Control"
+        },
+        {
+            "location": "/developer/sec-blueprint/03-security-concepts/#secure-boot",
+            "text": "",
+            "title": "Secure Boot"
+        },
+        {
+            "location": "/developer/sec-blueprint/03-security-concepts/#applications",
+            "text": "",
+            "title": "Applications"
+        },
+        {
+            "location": "/developer/sec-blueprint/03-security-concepts/#process-management",
+            "text": "",
+            "title": "Process Management"
+        },
+        {
+            "location": "/developer/sec-blueprint/04-adversaries/",
+            "text": "title : Adversaries\ndate  : 2016-06-30\ncategories: architecture, automotive\ntags: architecture, automotive, linux\nlayout: techdoc \n\n\n\n\nTable of Content\n\n\n\n\nTOC\n{:toc}\n\n\n\n\nAuthorised malicious project admin/developer\n\n\nMalware developer\n\n\nOrganised crime\n\n\nAuthorised device/cloud user\n\n\nNetwork mass attacker",
+            "title": "04 adversaries"
+        },
+        {
+            "location": "/developer/sec-blueprint/04-adversaries/#authorised-malicious-project-admindeveloper",
+            "text": "",
+            "title": "Authorised malicious project admin/developer"
+        },
+        {
+            "location": "/developer/sec-blueprint/04-adversaries/#malware-developer",
+            "text": "",
+            "title": "Malware developer"
+        },
+        {
+            "location": "/developer/sec-blueprint/04-adversaries/#organised-crime",
+            "text": "",
+            "title": "Organised crime"
+        },
+        {
+            "location": "/developer/sec-blueprint/04-adversaries/#authorised-devicecloud-user",
+            "text": "",
+            "title": "Authorised device/cloud user"
+        },
+        {
+            "location": "/developer/sec-blueprint/04-adversaries/#network-mass-attacker",
+            "text": "",
+            "title": "Network mass attacker"
+        },
+        {
+            "location": "/developer/sec-blueprint/04-threat-analysis/",
+            "text": "title : Treat Analysis \n Coverage\ndate  : 2016-06-30\ncategories: architecture, automotive\ntags: architecture, automotive, linux\nlayout: techdoc \n\n\n\n\nTable of Content\n\n\n\n\nTOC\n{:toc}\n\n\n\n\nFactory/Dealer installed applications\n\n\nFactory/Dealer installed application updates\n\n\nFactory/Dealer installed application removal\n\n\nUser installed applications\n\n\nUser installed application update\n\n\nUser installed application removal\n\n\nApplication Data security\n\n\nApplication Data upgrades\n\n\nVehicle bus write access by Factoy applications\n\n\nVehicle bus write access by User applications\n\n\nVehicle bus read access by Factoy applications\n\n\nVehicle bus read access by User applications\n\n\nPlatform software update failure due to corrupted update package\n\n\nPlatform software update failure due to corrupted invalid package\n\n\nAttack from the Cloud\n\n\nMan in the middle\n\n\nMalicious CAN / USB devices",
+            "title": "04 threat analysis"
+        },
+        {
+            "location": "/developer/sec-blueprint/04-threat-analysis/#factorydealer-installed-applications",
+            "text": "",
+            "title": "Factory/Dealer installed applications"
+        },
+        {
+            "location": "/developer/sec-blueprint/04-threat-analysis/#factorydealer-installed-application-updates",
+            "text": "",
+            "title": "Factory/Dealer installed application updates"
+        },
+        {
+            "location": "/developer/sec-blueprint/04-threat-analysis/#factorydealer-installed-application-removal",
+            "text": "",
+            "title": "Factory/Dealer installed application removal"
+        },
+        {
+            "location": "/developer/sec-blueprint/04-threat-analysis/#user-installed-applications",
+            "text": "",
+            "title": "User installed applications"
+        },
+        {
+            "location": "/developer/sec-blueprint/04-threat-analysis/#user-installed-application-update",
+            "text": "",
+            "title": "User installed application update"
+        },
+        {
+            "location": "/developer/sec-blueprint/04-threat-analysis/#user-installed-application-removal",
+            "text": "",
+            "title": "User installed application removal"
+        },
+        {
+            "location": "/developer/sec-blueprint/04-threat-analysis/#application-data-security",
+            "text": "",
+            "title": "Application Data security"
+        },
+        {
+            "location": "/developer/sec-blueprint/04-threat-analysis/#application-data-upgrades",
+            "text": "",
+            "title": "Application Data upgrades"
+        },
+        {
+            "location": "/developer/sec-blueprint/04-threat-analysis/#vehicle-bus-write-access-by-factoy-applications",
+            "text": "",
+            "title": "Vehicle bus write access by Factoy applications"
+        },
+        {
+            "location": "/developer/sec-blueprint/04-threat-analysis/#vehicle-bus-write-access-by-user-applications",
+            "text": "",
+            "title": "Vehicle bus write access by User applications"
+        },
+        {
+            "location": "/developer/sec-blueprint/04-threat-analysis/#vehicle-bus-read-access-by-factoy-applications",
+            "text": "",
+            "title": "Vehicle bus read access by Factoy applications"
+        },
+        {
+            "location": "/developer/sec-blueprint/04-threat-analysis/#vehicle-bus-read-access-by-user-applications",
+            "text": "",
+            "title": "Vehicle bus read access by User applications"
+        },
+        {
+            "location": "/developer/sec-blueprint/04-threat-analysis/#platform-software-update-failure-due-to-corrupted-update-package",
+            "text": "",
+            "title": "Platform software update failure due to corrupted update package"
+        },
+        {
+            "location": "/developer/sec-blueprint/04-threat-analysis/#platform-software-update-failure-due-to-corrupted-invalid-package",
+            "text": "",
+            "title": "Platform software update failure due to corrupted invalid package"
+        },
+        {
+            "location": "/developer/sec-blueprint/04-threat-analysis/#attack-from-the-cloud",
+            "text": "",
+            "title": "Attack from the Cloud"
+        },
+        {
+            "location": "/developer/sec-blueprint/04-threat-analysis/#man-in-the-middle",
+            "text": "",
+            "title": "Man in the middle"
+        },
+        {
+            "location": "/developer/sec-blueprint/04-threat-analysis/#malicious-can-usb-devices",
+            "text": "",
+            "title": "Malicious CAN / USB devices"
+        },
+        {
+            "location": "/developer/sec-blueprint/06-attack-surfaces/",
+            "text": "title : Attack Surfaces\ndate  : 2016-06-30\ncategories: architecture, automotive\ntags: architecture, automotive, linux\nlayout: techdoc \n\n\n\n\nTable of Content\n\n\n\n\nTOC\n{:toc}\n\n\n\n\nOS installation at factory Key leak risk\n\n\nOS boot\n\n\nOS upgrade\n\n\nDevice bus (static and autodetection) USB\n\n\n\"Wireless connections (Wifi##  Bluetooth##  ...)\"\n\n\n\"Wired connection (Can##  Serial##  Eth ...)\"\n\n\nOS-Device file system\n\n\nUser data (local \n cloud)\n\n\nApplication FW\n\n\nApplication Store\n\n\nApplication data (local \n Cloud)",
+            "title": "06 attack surfaces"
+        },
+        {
+            "location": "/developer/sec-blueprint/06-attack-surfaces/#os-installation-at-factory-key-leak-risk",
+            "text": "",
+            "title": "OS installation at factory Key leak risk"
+        },
+        {
+            "location": "/developer/sec-blueprint/06-attack-surfaces/#os-boot",
+            "text": "",
+            "title": "OS boot"
+        },
+        {
+            "location": "/developer/sec-blueprint/06-attack-surfaces/#os-upgrade",
+            "text": "",
+            "title": "OS upgrade"
+        },
+        {
+            "location": "/developer/sec-blueprint/06-attack-surfaces/#device-bus-static-and-autodetection-usb",
+            "text": "",
+            "title": "Device bus (static and autodetection) USB"
+        },
+        {
+            "location": "/developer/sec-blueprint/06-attack-surfaces/#wireless-connections-wifi-bluetooth",
+            "text": "",
+            "title": "\"Wireless connections (Wifi##  Bluetooth##  ...)\""
+        },
+        {
+            "location": "/developer/sec-blueprint/06-attack-surfaces/#wired-connection-can-serial-eth",
+            "text": "",
+            "title": "\"Wired connection (Can##  Serial##  Eth ...)\""
+        },
+        {
+            "location": "/developer/sec-blueprint/06-attack-surfaces/#os-device-file-system",
+            "text": "",
+            "title": "OS-Device file system"
+        },
+        {
+            "location": "/developer/sec-blueprint/06-attack-surfaces/#user-data-local-cloud",
+            "text": "",
+            "title": "User data (local &amp; cloud)"
+        },
+        {
+            "location": "/developer/sec-blueprint/06-attack-surfaces/#application-fw",
+            "text": "",
+            "title": "Application FW"
+        },
+        {
+            "location": "/developer/sec-blueprint/06-attack-surfaces/#application-store",
+            "text": "",
+            "title": "Application Store"
+        },
+        {
+            "location": "/developer/sec-blueprint/06-attack-surfaces/#application-data-local-cloud",
+            "text": "",
+            "title": "Application data (local &amp; Cloud)"
+        },
+        {
+            "location": "/developer/sec-blueprint/",
+            "text": "title : Security BluePrint Overview\ndate  : 2016-07-06\ncategory: security\ntags: security, architecture, automotive, linux\nlayout: techdoc \n\n\n\n\nOverview\n\n\nPlateform Security\n\n\nSecurity Concepts\n\n\nAdversaries\n\n\nThreat Analysis\n\n\nAttack Surfaces",
+            "title": "Home"
+        },
+        {
+            "location": "/developer/sec-blueprint/#overview",
+            "text": "",
+            "title": "Overview"
+        },
+        {
+            "location": "/developer/sec-blueprint/#plateform-security",
+            "text": "",
+            "title": "Plateform Security"
+        },
+        {
+            "location": "/developer/sec-blueprint/#security-concepts",
+            "text": "",
+            "title": "Security Concepts"
+        },
+        {
+            "location": "/developer/sec-blueprint/#adversaries",
+            "text": "",
+            "title": "Adversaries"
+        },
+        {
+            "location": "/developer/sec-blueprint/#threat-analysis",
+            "text": "",
+            "title": "Threat Analysis"
+        },
+        {
+            "location": "/developer/sec-blueprint/#attack-surfaces",
+            "text": "",
+            "title": "Attack Surfaces"
+        },
+        {
+            "location": "/developer/signaling/architecture/",
+            "text": "categories: architecture, appfw\ntags: architecture, signal, message\nlayout: techdoc\n\n\n\n\nTable of Content\n\n\n\n\nTOC\n{:toc}\n\n\n\n\nContext\n\n\nAutomotive applications need to understand in real time the context in which \nvehicles operate. In order to do so, it is critical for automotive application\nto rely on a simple, fast and secure method to access data generated by the\nmultiple sensors/ECU embedded in modern cars.\n\n\nThis signaling problem is neither new, neither unique to the automotive and\nmultiple solutions often described as Message Broker or Signaling Gateway have\nbeen around for a while.\nIn the context of Linux for Automotive, the \"Automotive Message Broker Daemon\n\" (aka AMBd) has been around for few years and is pretty well known within the\nLinux Automotive community.\n\n\nThe present discussion is a proposal to enhance existing signaling/message\nmodels. Our proposal relies on [[APbinder]] binder/bindings model to minimize\ncomplexity while keeping the system fast and secure.\nWe propose a model with multiple transport options and a full set of security\nfeature to protect the agent generating the signal as well as consuming them.\n\n\nObjectives\n\n\nOur objectives are to solve following 3 key issues:\n\n\n\n\nreduce as much as possible the amount of exchanged data to the meaningful subset really used by applications\n\n\noffer a high level API that obfuscates low level and proprietary interface to improve stability in time of the code\n\n\nhide specificities of low level implementation as well as the chosen deployment distribution model.\n\n\n\n\nTo reach first objective, events emission frequency should be controlled at the lowest level it possibly can.\nAggregation, composition, treatment, filtering of signals should be supported at software level when \nnot supported by the hardware.\n\n\nSecond objectives of offering long term stable hight level API while allowing flexibility in changing low level implementation\nmay look somehow conflicting. Nevertheless by isolating low level interface from high level and allowing dynamic composition\nit is possible to mitigate both objectives.\n\n\nArchitecture\n\n\nGood practice is often based on modularity with clearly separated components assembled within a common framework.\nSuch modularity ensures separation of duties, robustness, resilience and achievable long term maintenance.\n\n\nThis document uses the term \"AGENT\" to define a specific instance of this proposed common framework used to host a group\nof dedicated separated components that handle targeted signals/events. Each agent exposes to services/applications\nthe signals/events it is responsible for. \n\n\nAs an example, a CAN-bus agent may want to mix non-public proprietary API with CANopen compatible devices while hiding this\ncomplexity to applications. The goal is on one hand to isolate proprietary piece of code in such a way that it is\nas transparent as possible for the remaining part of the architecture. On a second hand isolation of code related\nto a specific device provides a better separation of responsibilities, keeping all specificity related to a given\ncomponent clearly isolated and much easier to test or maintain. Last but not least if needed this model may also\nhelp to provide some proprietary code directly as binary and not as source code.\n\n\n\n\nWhile in some cases it may be chosen to implement a single agent responsible for everything, other scenarii may chose\nto split responsibility between multiple agents. Those multiple agents may run on a single ECU or on multiple ECUs.\nChosen deployment distribution strategy should not impact the development of components responsible for signals/events\ncapture. As well as it should have a loose impact on applications/services consuming those events.\n\n\nA distributed capable architecture may provide multiple advantages:\n\n\n\n\nit avoids to concentrate complexity in a single big/fat component.\n\n\nit leverages naturally multiple ECUs and existing network architecture\n\n\nit simplifies security by enabling isolation and sandboxing\n\n\nit clearly separates responsibilities and simplifies resolution of conflicts\n\n\n\n\n\n\nPerformance matters. There is a trade-off between modularity and efficiency.\nThis is specially critical for signals where propagation time from one module to the other\nshould remain as short as possible and furthermore should consume as little computing resources as possible.\n\n\nA flexible solution should provide enough versatility to either compose modules in separate processes;\neither chose a model where everything is hosted within a single process. Chosen deployment model should have minor\nor no impact on development/integration processes. Deployment model should be something easy to change, it should remain\na tactical decision and never become a structuring decision.\n\n\nNevertheless while grouping modules may improve performance and reduce resource consumption, on the other hand,\nit has a clear impact on security. No one should forget that some signals have very different level of security from other ones.\nMixing everything within a single process makes all signal's handling within a single security context.\nSuch a decision may have a significant impact on the level on confidence one may have in the global system.\n\n\nProviding such flexibility constrains the communication model used by modules:\n\n\n\n\nThe API of integration of the modules (the API of the framework) that enables\n  the connection of modules must be independent of the implementation of\n  the communication layer\n\n\nThe communication layer must be as transparent as possible, its\n  implementation shouldn't impact how it is used\n\n\nThe cost of the abstraction for modules grouped in a same process\n  must be as little as possible\n\n\nThe cost of separating modules with the maximum of security must remain as minimal as possible\n\n\n\n\nAnother point impacting performance relates to a smart limitation on the number of emitted signals.\nImproving the cost of sending a signal is one thing, reducing the number of signals is an other one.\nNo one should forget that the faster you ignore a useless signal the better it is. \nThe best way to achieve this is by doing the filtering of useless signal as close as possible\nof the component generating the signal and when possible directly at the hardware level.\n\n\nTo enable the right component to filter useless signals, consumer clients must describe\nprecisely the data they need. Then services and agent must organise their computing to provide\nonly expected data at the expected rate. Also, any data not required by any client should at\nthe minimum never be transmitted. Furthermore when possible then should even not be computed at all.\n\n\nDescribing expected data in a precise but nevertheless simple manner remains a challenge.\nIt implies to manage:\n\n\n\n\nrequested frequency of expected data\n\n\naccuracy of data to avoid detection of inaccurate changes\n\n\nwhen signaling is required (raising edge, falling edge,\n  on maintained state, ...),\n\n\nfiltering of data to avoid glitches and noise,\n\n\ncomposition of signals both numerically and logically (adding,\n  subtracting, running logical operators like AND/OR/XOR, getting the mean, ...)\n\n\netc...\n\n\n\n\nIt is critical to enable multiple features in signal queries to enable modules \nto implement the best computing method. The best computing method may have an impact on\nwhich device to query as well as on which filters should be applied. Furthermore\nfiltering should happen as soon as possible and obviously when possible directly at hardware level.\n\n\nLeveraging Existing solutions\n\n\nUnfortunately, there is no existing solution ready to be integrated. Obviously some parts of required technologies to\nimplement such solution exist, but a significant part of the work remains to be done. If we look at the main building\nblocks used in the proposed architecture.\n\n\nTransport Solutions\n\n\nD-Bus is the standard choice for Linux, nevertheless it has some serious performance limitation due to\ninternal verbosity. Nevertheless because it is available and pre-integrated with almost every Linux component, D-Bus may\nstill remains an acceptable choice for signal with low rate of emission (i.e. HMI). \n\n\nFor a faster communication, Jaguar-Land-Rover proposes a memory shared signal infrastructure.\nUnfortunately this solution is far from solving all issues and has some drawbacks.\nLet check the open issues it has: \n\n\n\n\nthere is no management of what requested data are. This\ntranslate in computing data even when not needed.\n\n\non top of shared memory, an extra side channel is required for processes to communicate with the\ndaemon. \n\n\na single shared memory implies a lot of concurrency handling. This might\nintroduce drawbacks that otherwise would be solved through communication buffering.\n\n\n\n\nZeroMQ, NanoMSG and equivalent libraries focused on fast communication. Some (e.g. ZeroMQ) come with\na commercial licensing model when others (e.g. NanoMSG) use an open source licensing. \nThose solutions are well suited for both communicating inside a unique ECU or across several ECUs.\nHowever, most of them are using Unix domain sockets and TCP sockets and typically do not use shared memory for inter-process communication.\n\n\nLast but not least Android binder, Kdbus and other leverage shared memory, zero copy and sit directly within Linux kernel. \nWhile this may boost information passing between local processes, it also has some limitations. The first one is\nthe non support of a multi-ECU or vehicle to cloud distribution. The second one is that none of them is\napproved upstream in kernel tree. This last point may create some extra burden each time a new version\nof Linux kernel is needed or when porting toward a new hardware is required.\n\n\nQuery and Filtering Language\n\n\nDescription language for filtering of expected data remains an almost green field where nothing really fit signal agent requirements.\nLanguages like Simulink or signal processing graphical languages are valuable modelling tools. Unfortunately they\ncannot be inserted in the car. Furthermore those languages have many features that are not useful in proposed signal agent\ncontext and cost of integrating such complex languages might not be justified for something as simple as a signal agent.\nThe same remarks apply for automation languages.\n\n\nFurther investigations would be needed. Even if there is no obvious solutions fit or need. Existing solution use a different context or industry may exist or nearby solutions\nmight worse the value be adapted to our requirements.\n\n\nDescribing Signal Subscriptions using JSON\n\n\nJSON is a rich structured representation of data. For requested data, it allows the expression of multiple features and constraints.\nJSON is both very flexible and efficient.\nThere are significant advantages in describing requested data at subscription time using a language like JSON.\nAnother advantage of JSON is that no parser is required to analyse the request.\n\n\nHere is an example of what could be a subscription specification:\n\n\n{\n  \ndefine\n: {\n      \nspeed\n: {\n           \nsignal\n: \naverage-wheel-speed\n,\n           \nunit\n: \nkm/h\n,\n           \naccuracy\n: 0.5,\n           \nfiltered\n: \nyes\n\n       },\n   \nexpect\n: {\n      \nvalue\n: \nspeed\n,\n      \nwhen\n: {\n          \ncross\n: { \nspeed\n: [ 50, 90, 110, 130 ] }\n      },\n      \nmax-rate\n: 1\n  }\n}\n\n\n\n\nA generic library to handle such request definition should be provided.\nThis library should allow the agent to process the request, search if its business logic or any of present low level modules support requested signal. Finally it should notify the concerned lower module to optimise signal generation.\n\n\nWhile such an approach might not be the most common approach, organisation like \nSignal-K\n already uses JSON to transmit NMEA-2000 signals on boats. Others might already used it as well and some further investigations on existing solutions would be needed before moving in such a direction.\n\n\nNaming Signal\n\n\nNaming and defining signals is something very complex.\nFor example just \nspeed\n, as a signal, is difficult to define.\nWhat unit is used (km/h, M/h, m/s, ...)?\nFrom which source (wheels, GPS, AccelMeter)?\nHow was it captured (period of measure, instantaneous, mean, filtered)?\n\n\nIn order to simplify application development we should nevertheless agree on some naming convention for key signals.\nThose names might be relatively complex and featured. They may include a unit, a rate, a precision, etc.\n\n\nHow these names should be registered, documented and managed is out of scope of this document but\nextremely important and at some point in time should be addressed. Nevertheless this issue should not prevent\nfrom moving forward developing a modern architecture.\nDevelopers should be warned that naming is a complex\ntask, and that in the future naming scheme should be redefined, and potential adjustments would be required.\n\n\nLeveraging AGL binder\n\n\nSuch a model is loosely coupled with AGL binder. Low level signal modules as well as virtual signal\ncomponents may potentially run within any hosting environment that would provide the right API with corresponding required facilities.\nNevertheless leveraging [[APbinder]] has multiple advantages. It already implements event notification to support\na messaging/signaling model for distributed agents. It enables a subscribe model responding to the requirement and finally it uses JSON\nnatively.\n\n\nThis messaging/signalling model already enforces the notion of subscription for receiving data.\nIt implies that unexpected data are not sent and merely not computed.\nWhen expected data is available, it is pushed to all waiting subscriber only one time.\n\n\nThe [[APbinder]] provides transparency of communication.\nIt currently implements the transparency over D-Bus/Kdbus and WebSocket.\nIts transparency mechanism of communication is easy to extend to other\ntechnologies: pools of shared memory or any proprietary transport model.\n\n\nWhen modules are loaded by the same service agent, the [[APbinder]] provides transparently \"in-memory\" communication.\nThis in-memory communication is really efficient: on one hand, the exchanged\nJSON objects are not serialized (because not streamed), on the other hand,\nthose JSON objects provide a high level of abstraction able to transfer any\ndata.\n\n\nTechnically an agent is a standard [[APbinder]] service.\nTherefore Signal/Agent inherits of security protection through SMACK, access\ncontrol through Cynara, transparency of API to transport layer, life cycle\nmanagement, ... Like any other [[APbinder]] service Signal/Agent is composed of a set of bindings. In signal agent specific case, those bindings are in fact the \"signal modules\".\n\n\nThe proposed model allows to implement low level dependencies as independent signal modules.\nThose modules when developed are somehow like \"Lego Bricks\".\nThey can be spread or grouped within one or multiple agents depending on\ndeployment constraints (performance, multi-ECU, security \n isolation constraints,\n...).\n\n\nThe model naturally uses JSON to represent data.\n\n\nMulti-ECU and Vehicule to Cloud interactions:\n while this might not be a\nshow stopper for current projects, it is obvious that in the near future\nSignal/Agent should support a fully distributed architectures.\nSome event may come from the cloud (i.e. request to start monitoring a given\nfeature), some may come from SmartCity and nearby vehicles, and last but\nnot least some may come from another ECU within the same vehicle or from a\nvirtualized OS within the same ECU (e.g. cluster \n IVI). \nIn order to do so, Signal modules should enable composition within one or more\n[[APbinder]] inside the same ECU.\nFurthermore they should also support chaining with the outside world.\n\n\n\n\n\n\nApplication requests Virtual Signal exactly like if it was a low level\n   signal\n\n\nAgent Signal has direct relation to low level signal\n\n\nAgent needs to proxy to an other agent inside the same ECU to access the\n   signal\n\n\nSignal is not present on current ECU. Request has to be proxied to the\n   outside world\n\n\n\n\nWork to be Done\n\n\nAs stated before, the foundation for event signaling is already in place in\ndevelopment branch of [[APbinder]].\nNevertheless in order to provide a real added value to developers missing\ncomponents should be developed.\n\n\n\n\nAgent Core Components\n\n\nCreate a simple configuration model to move from low level signal\n  description to something more generic that could help to abstract the\n  hardware.\n\n\nSearch for an already existing library that provide high level signal\n  subscription and adapt it.\n  If no such library exist, create it.\n\n\nImplement some form of introspection to allow application to discover\n  the list of signal supported by a given agent.\n\n\n\n\n\n\nFew Common Agents\n\n\nProvide at least a reference implementation for a generic CAN agent\n\n\nAgent simulation, most developers may not have access to physical\n  devices during development phase, some form of simulator would be more\n  than welcome.\n\n\netc ...\n\n\n\n\n\n\n\n\nReusing existing/legacy code\n\n\nWhatever the final architecture will be, it is important not to forget how\nto leverage existing/legacy code within the new model.\nThere are multiple sources for reusable code that can be classified in two\nmain categories:\n\n\n\n\n\n\nLow Level\n Typically those existing code interface with CAN-BUS or any\n  other low level device.\n  Some AMBd[[6]] plugins could be a good source of input for low level\n  implementation.\n  But also more community oriented projects like: ArduPilot/Rover[[7]]\n  Barometer or Camera interfaces[[8]].\n\n\n\n\n\n\nVirtual Signal\n In many cases accessing to low level signal is not enough.\n  Low level information might need to be composed (i.e. GPS+Gyro+Accel).\n  Raw value might need to be processed (i.e.: change unit, average on the\n  last xx seconds, ...).\n  Writing this composition logic might be quite complex and reusing existing\n  libraries like: LibEkNav for Kalman filtering [[9]] or Vrgimbal for 3 axes\n  control[[10]] may help saving a lot of time.\n\n\n\n\n\n\nProposal\n\n\nIn order to start moving forward one option would be to take a concrete example\nwith some existing can devices (i.e. the one from MicroChips use within ALS demo).\n\n\nAn other option would be to leverage Porter+Cogent-Extension[[11]] that supports\nboth a GPS and a 9 axis sensor to implement a smart geoposition agent. \nWe could  reuse some existing code like the one from Rover[[7]] to provide a\nfine grain positioning service and then interface this new GeoPositioning\nagent with an application like GpsNavi[[12]] to get a end-to-end demonstrator.",
+            "title": "Architecture"
+        },
+        {
+            "location": "/developer/signaling/architecture/#context",
+            "text": "Automotive applications need to understand in real time the context in which \nvehicles operate. In order to do so, it is critical for automotive application\nto rely on a simple, fast and secure method to access data generated by the\nmultiple sensors/ECU embedded in modern cars.  This signaling problem is neither new, neither unique to the automotive and\nmultiple solutions often described as Message Broker or Signaling Gateway have\nbeen around for a while.\nIn the context of Linux for Automotive, the \"Automotive Message Broker Daemon\n\" (aka AMBd) has been around for few years and is pretty well known within the\nLinux Automotive community.  The present discussion is a proposal to enhance existing signaling/message\nmodels. Our proposal relies on [[APbinder]] binder/bindings model to minimize\ncomplexity while keeping the system fast and secure.\nWe propose a model with multiple transport options and a full set of security\nfeature to protect the agent generating the signal as well as consuming them.",
+            "title": "Context"
+        },
+        {
+            "location": "/developer/signaling/architecture/#objectives",
+            "text": "Our objectives are to solve following 3 key issues:   reduce as much as possible the amount of exchanged data to the meaningful subset really used by applications  offer a high level API that obfuscates low level and proprietary interface to improve stability in time of the code  hide specificities of low level implementation as well as the chosen deployment distribution model.   To reach first objective, events emission frequency should be controlled at the lowest level it possibly can.\nAggregation, composition, treatment, filtering of signals should be supported at software level when \nnot supported by the hardware.  Second objectives of offering long term stable hight level API while allowing flexibility in changing low level implementation\nmay look somehow conflicting. Nevertheless by isolating low level interface from high level and allowing dynamic composition\nit is possible to mitigate both objectives.",
+            "title": "Objectives"
+        },
+        {
+            "location": "/developer/signaling/architecture/#architecture",
+            "text": "Good practice is often based on modularity with clearly separated components assembled within a common framework.\nSuch modularity ensures separation of duties, robustness, resilience and achievable long term maintenance.  This document uses the term \"AGENT\" to define a specific instance of this proposed common framework used to host a group\nof dedicated separated components that handle targeted signals/events. Each agent exposes to services/applications\nthe signals/events it is responsible for.   As an example, a CAN-bus agent may want to mix non-public proprietary API with CANopen compatible devices while hiding this\ncomplexity to applications. The goal is on one hand to isolate proprietary piece of code in such a way that it is\nas transparent as possible for the remaining part of the architecture. On a second hand isolation of code related\nto a specific device provides a better separation of responsibilities, keeping all specificity related to a given\ncomponent clearly isolated and much easier to test or maintain. Last but not least if needed this model may also\nhelp to provide some proprietary code directly as binary and not as source code.   While in some cases it may be chosen to implement a single agent responsible for everything, other scenarii may chose\nto split responsibility between multiple agents. Those multiple agents may run on a single ECU or on multiple ECUs.\nChosen deployment distribution strategy should not impact the development of components responsible for signals/events\ncapture. As well as it should have a loose impact on applications/services consuming those events.  A distributed capable architecture may provide multiple advantages:   it avoids to concentrate complexity in a single big/fat component.  it leverages naturally multiple ECUs and existing network architecture  it simplifies security by enabling isolation and sandboxing  it clearly separates responsibilities and simplifies resolution of conflicts    Performance matters. There is a trade-off between modularity and efficiency.\nThis is specially critical for signals where propagation time from one module to the other\nshould remain as short as possible and furthermore should consume as little computing resources as possible.  A flexible solution should provide enough versatility to either compose modules in separate processes;\neither chose a model where everything is hosted within a single process. Chosen deployment model should have minor\nor no impact on development/integration processes. Deployment model should be something easy to change, it should remain\na tactical decision and never become a structuring decision.  Nevertheless while grouping modules may improve performance and reduce resource consumption, on the other hand,\nit has a clear impact on security. No one should forget that some signals have very different level of security from other ones.\nMixing everything within a single process makes all signal's handling within a single security context.\nSuch a decision may have a significant impact on the level on confidence one may have in the global system.  Providing such flexibility constrains the communication model used by modules:   The API of integration of the modules (the API of the framework) that enables\n  the connection of modules must be independent of the implementation of\n  the communication layer  The communication layer must be as transparent as possible, its\n  implementation shouldn't impact how it is used  The cost of the abstraction for modules grouped in a same process\n  must be as little as possible  The cost of separating modules with the maximum of security must remain as minimal as possible   Another point impacting performance relates to a smart limitation on the number of emitted signals.\nImproving the cost of sending a signal is one thing, reducing the number of signals is an other one.\nNo one should forget that the faster you ignore a useless signal the better it is. \nThe best way to achieve this is by doing the filtering of useless signal as close as possible\nof the component generating the signal and when possible directly at the hardware level.  To enable the right component to filter useless signals, consumer clients must describe\nprecisely the data they need. Then services and agent must organise their computing to provide\nonly expected data at the expected rate. Also, any data not required by any client should at\nthe minimum never be transmitted. Furthermore when possible then should even not be computed at all.  Describing expected data in a precise but nevertheless simple manner remains a challenge.\nIt implies to manage:   requested frequency of expected data  accuracy of data to avoid detection of inaccurate changes  when signaling is required (raising edge, falling edge,\n  on maintained state, ...),  filtering of data to avoid glitches and noise,  composition of signals both numerically and logically (adding,\n  subtracting, running logical operators like AND/OR/XOR, getting the mean, ...)  etc...   It is critical to enable multiple features in signal queries to enable modules \nto implement the best computing method. The best computing method may have an impact on\nwhich device to query as well as on which filters should be applied. Furthermore\nfiltering should happen as soon as possible and obviously when possible directly at hardware level.",
+            "title": "Architecture"
+        },
+        {
+            "location": "/developer/signaling/architecture/#leveraging-existing-solutions",
+            "text": "Unfortunately, there is no existing solution ready to be integrated. Obviously some parts of required technologies to\nimplement such solution exist, but a significant part of the work remains to be done. If we look at the main building\nblocks used in the proposed architecture.",
+            "title": "Leveraging Existing solutions"
+        },
+        {
+            "location": "/developer/signaling/architecture/#transport-solutions",
+            "text": "D-Bus is the standard choice for Linux, nevertheless it has some serious performance limitation due to\ninternal verbosity. Nevertheless because it is available and pre-integrated with almost every Linux component, D-Bus may\nstill remains an acceptable choice for signal with low rate of emission (i.e. HMI).   For a faster communication, Jaguar-Land-Rover proposes a memory shared signal infrastructure.\nUnfortunately this solution is far from solving all issues and has some drawbacks.\nLet check the open issues it has:    there is no management of what requested data are. This\ntranslate in computing data even when not needed.  on top of shared memory, an extra side channel is required for processes to communicate with the\ndaemon.   a single shared memory implies a lot of concurrency handling. This might\nintroduce drawbacks that otherwise would be solved through communication buffering.   ZeroMQ, NanoMSG and equivalent libraries focused on fast communication. Some (e.g. ZeroMQ) come with\na commercial licensing model when others (e.g. NanoMSG) use an open source licensing. \nThose solutions are well suited for both communicating inside a unique ECU or across several ECUs.\nHowever, most of them are using Unix domain sockets and TCP sockets and typically do not use shared memory for inter-process communication.  Last but not least Android binder, Kdbus and other leverage shared memory, zero copy and sit directly within Linux kernel. \nWhile this may boost information passing between local processes, it also has some limitations. The first one is\nthe non support of a multi-ECU or vehicle to cloud distribution. The second one is that none of them is\napproved upstream in kernel tree. This last point may create some extra burden each time a new version\nof Linux kernel is needed or when porting toward a new hardware is required.",
+            "title": "Transport Solutions"
+        },
+        {
+            "location": "/developer/signaling/architecture/#query-and-filtering-language",
+            "text": "Description language for filtering of expected data remains an almost green field where nothing really fit signal agent requirements.\nLanguages like Simulink or signal processing graphical languages are valuable modelling tools. Unfortunately they\ncannot be inserted in the car. Furthermore those languages have many features that are not useful in proposed signal agent\ncontext and cost of integrating such complex languages might not be justified for something as simple as a signal agent.\nThe same remarks apply for automation languages.  Further investigations would be needed. Even if there is no obvious solutions fit or need. Existing solution use a different context or industry may exist or nearby solutions\nmight worse the value be adapted to our requirements.",
+            "title": "Query and Filtering Language"
+        },
+        {
+            "location": "/developer/signaling/architecture/#describing-signal-subscriptions-using-json",
+            "text": "JSON is a rich structured representation of data. For requested data, it allows the expression of multiple features and constraints.\nJSON is both very flexible and efficient.\nThere are significant advantages in describing requested data at subscription time using a language like JSON.\nAnother advantage of JSON is that no parser is required to analyse the request.  Here is an example of what could be a subscription specification:  {\n   define : {\n       speed : {\n            signal :  average-wheel-speed ,\n            unit :  km/h ,\n            accuracy : 0.5,\n            filtered :  yes \n       },\n    expect : {\n       value :  speed ,\n       when : {\n           cross : {  speed : [ 50, 90, 110, 130 ] }\n      },\n       max-rate : 1\n  }\n}  A generic library to handle such request definition should be provided.\nThis library should allow the agent to process the request, search if its business logic or any of present low level modules support requested signal. Finally it should notify the concerned lower module to optimise signal generation.  While such an approach might not be the most common approach, organisation like  Signal-K  already uses JSON to transmit NMEA-2000 signals on boats. Others might already used it as well and some further investigations on existing solutions would be needed before moving in such a direction.",
+            "title": "Describing Signal Subscriptions using JSON"
+        },
+        {
+            "location": "/developer/signaling/architecture/#naming-signal",
+            "text": "Naming and defining signals is something very complex.\nFor example just  speed , as a signal, is difficult to define.\nWhat unit is used (km/h, M/h, m/s, ...)?\nFrom which source (wheels, GPS, AccelMeter)?\nHow was it captured (period of measure, instantaneous, mean, filtered)?  In order to simplify application development we should nevertheless agree on some naming convention for key signals.\nThose names might be relatively complex and featured. They may include a unit, a rate, a precision, etc.  How these names should be registered, documented and managed is out of scope of this document but\nextremely important and at some point in time should be addressed. Nevertheless this issue should not prevent\nfrom moving forward developing a modern architecture.\nDevelopers should be warned that naming is a complex\ntask, and that in the future naming scheme should be redefined, and potential adjustments would be required.",
+            "title": "Naming Signal"
+        },
+        {
+            "location": "/developer/signaling/architecture/#leveraging-agl-binder",
+            "text": "Such a model is loosely coupled with AGL binder. Low level signal modules as well as virtual signal\ncomponents may potentially run within any hosting environment that would provide the right API with corresponding required facilities.\nNevertheless leveraging [[APbinder]] has multiple advantages. It already implements event notification to support\na messaging/signaling model for distributed agents. It enables a subscribe model responding to the requirement and finally it uses JSON\nnatively.  This messaging/signalling model already enforces the notion of subscription for receiving data.\nIt implies that unexpected data are not sent and merely not computed.\nWhen expected data is available, it is pushed to all waiting subscriber only one time.  The [[APbinder]] provides transparency of communication.\nIt currently implements the transparency over D-Bus/Kdbus and WebSocket.\nIts transparency mechanism of communication is easy to extend to other\ntechnologies: pools of shared memory or any proprietary transport model.  When modules are loaded by the same service agent, the [[APbinder]] provides transparently \"in-memory\" communication.\nThis in-memory communication is really efficient: on one hand, the exchanged\nJSON objects are not serialized (because not streamed), on the other hand,\nthose JSON objects provide a high level of abstraction able to transfer any\ndata.  Technically an agent is a standard [[APbinder]] service.\nTherefore Signal/Agent inherits of security protection through SMACK, access\ncontrol through Cynara, transparency of API to transport layer, life cycle\nmanagement, ... Like any other [[APbinder]] service Signal/Agent is composed of a set of bindings. In signal agent specific case, those bindings are in fact the \"signal modules\".  The proposed model allows to implement low level dependencies as independent signal modules.\nThose modules when developed are somehow like \"Lego Bricks\".\nThey can be spread or grouped within one or multiple agents depending on\ndeployment constraints (performance, multi-ECU, security   isolation constraints,\n...).  The model naturally uses JSON to represent data.  Multi-ECU and Vehicule to Cloud interactions:  while this might not be a\nshow stopper for current projects, it is obvious that in the near future\nSignal/Agent should support a fully distributed architectures.\nSome event may come from the cloud (i.e. request to start monitoring a given\nfeature), some may come from SmartCity and nearby vehicles, and last but\nnot least some may come from another ECU within the same vehicle or from a\nvirtualized OS within the same ECU (e.g. cluster   IVI). \nIn order to do so, Signal modules should enable composition within one or more\n[[APbinder]] inside the same ECU.\nFurthermore they should also support chaining with the outside world.    Application requests Virtual Signal exactly like if it was a low level\n   signal  Agent Signal has direct relation to low level signal  Agent needs to proxy to an other agent inside the same ECU to access the\n   signal  Signal is not present on current ECU. Request has to be proxied to the\n   outside world",
+            "title": "Leveraging AGL binder"
+        },
+        {
+            "location": "/developer/signaling/architecture/#work-to-be-done",
+            "text": "As stated before, the foundation for event signaling is already in place in\ndevelopment branch of [[APbinder]].\nNevertheless in order to provide a real added value to developers missing\ncomponents should be developed.   Agent Core Components  Create a simple configuration model to move from low level signal\n  description to something more generic that could help to abstract the\n  hardware.  Search for an already existing library that provide high level signal\n  subscription and adapt it.\n  If no such library exist, create it.  Implement some form of introspection to allow application to discover\n  the list of signal supported by a given agent.    Few Common Agents  Provide at least a reference implementation for a generic CAN agent  Agent simulation, most developers may not have access to physical\n  devices during development phase, some form of simulator would be more\n  than welcome.  etc ...",
+            "title": "Work to be Done"
+        },
+        {
+            "location": "/developer/signaling/architecture/#reusing-existinglegacy-code",
+            "text": "Whatever the final architecture will be, it is important not to forget how\nto leverage existing/legacy code within the new model.\nThere are multiple sources for reusable code that can be classified in two\nmain categories:    Low Level  Typically those existing code interface with CAN-BUS or any\n  other low level device.\n  Some AMBd[[6]] plugins could be a good source of input for low level\n  implementation.\n  But also more community oriented projects like: ArduPilot/Rover[[7]]\n  Barometer or Camera interfaces[[8]].    Virtual Signal  In many cases accessing to low level signal is not enough.\n  Low level information might need to be composed (i.e. GPS+Gyro+Accel).\n  Raw value might need to be processed (i.e.: change unit, average on the\n  last xx seconds, ...).\n  Writing this composition logic might be quite complex and reusing existing\n  libraries like: LibEkNav for Kalman filtering [[9]] or Vrgimbal for 3 axes\n  control[[10]] may help saving a lot of time.",
+            "title": "Reusing existing/legacy code"
+        },
+        {
+            "location": "/developer/signaling/architecture/#proposal",
+            "text": "In order to start moving forward one option would be to take a concrete example\nwith some existing can devices (i.e. the one from MicroChips use within ALS demo).  An other option would be to leverage Porter+Cogent-Extension[[11]] that supports\nboth a GPS and a 9 axis sensor to implement a smart geoposition agent. \nWe could  reuse some existing code like the one from Rover[[7]] to provide a\nfine grain positioning service and then interface this new GeoPositioning\nagent with an application like GpsNavi[[12]] to get a end-to-end demonstrator.",
+            "title": "Proposal"
+        },
+        {
+            "location": "/developer/signaling/",
+            "text": "===== AGL Message Signaling (proposal) =====\n\n\n==== Architecture Proposal ====\n\n\nThis \ndocument\n presents a proposal of architecture for message signaling in AGL.\n\n\nAlso available as a \nPDF Document\n\n\n==== Documentation ====\n\n\nDeveloper Guidelines are available as a \nPDF Document\n \n\n\nGPS Binding example is available on Github: \ngithub:iotbzh/af-gps-binding\n\n\n==== OpenXC Demo ====\n\n\nA reference HTML5 application has been developed: see \ngithub:iotbzh/txc-demo\n.\n\n\nThis application uses a \nOpenXC trace file\n to display 4 different panels representing live vehicle data.\n\n\nIt's available as an \nAGL Application paclage\n installable through AGL Application Framework.\n\n\n==== Benchmarks ====\n\n\nSome tests to evaluate the performances of the framework have been done by simulating CAN Data: \nAGL-AppFW-CAN-Signaling-Benchmark.pdf\n\n\n==== AMM Munich'16 Presentation ====\n\n\nJose's presentation at AGL AMM Munich'16",
+            "title": "Home"
+        },
+        {
+            "location": "/user/getting-started/source-code/",
+            "text": "Download AGL Source Code\n\n\nThe AGL source code and Yocto layers are maintained on the AGL Gerrit server. For information on how to create accounts for gerrit see Getting Started with AGL.\n\n\nPrepare Repo Tool\n\n\nAGL Uses the Repo tool for managing repositories. First you need to setup layers of AGL. You can use the commands below to prepare Repo:\n\n\nmkdir ~/bin\nexport PATH=~/bin:$PATH\ncurl https://storage.googleapis.com/git-repo-downloads/repo \n ~/bin/repo\nchmod a+x ~/bin/repo\n\n\n\n\nDownload Latest Stable Release\n\n\nTo download all layers for the for the latest stable release, Blowfish 2.0.2:\n\n\nrepo init -b blowfish -m default_blowfish_2.0.2.xml -u https://gerrit.automotivelinux.org/gerrit/AGL/AGL-repo\nrepo sync\n\n\n\n\nDownload Latest on Blowfish Branch\n\n\nTo download all layers on the current release branch which may be in the midst of testing or changes prior to the next stable release:\n\n\nrepo init -b blowfish -u https://gerrit.automotivelinux.org/gerrit/AGL/AGL-repo\nrepo sync\n\n\n\n\nDownload Master Branch\n\n\nTo download all code from master:\n\n\nrepo init -u https://gerrit.automotivelinux.org/gerrit/AGL/AGL-repo\nrepo sync\n\n\n\n\nSet up Build Environment\n\n\nSet up the development environment for the desired target hardware. AGL has created a set up script for defining the target build and desired optional features. To get a complete list of the options available run.\n\n\n  $ source meta-agl/scripts/aglsetup.sh -h\n\n\n\n\nOnce you run aglsetup.sh with your desired paramaters, you can build any target desired.\n\n\nFeatures supported by aglsetup\n\n\nHere is the list of features for AGL 2.0 that can be specified in the aglsetup.sh command line:\n\n\n\n\nin \nmeta-agl\n\n\nagl-devel\n: activate development options (empty root password, debugger, strace, valgrind \u2026)\n\n\nagl-netboot\n: enable network boot support through TFTP and NBD (see meta-netboot layer)\n\n\n\n\n\n\nin \nmeta-agl-extra\n\n\nagl-appfw-smack\n: enables IoT.bzh Application Framework + SMACK + Cynara\n\n\nagl-demo\n: enable layer meta-agl-demo and meta-qt5 - required to build     * agl-demo-platform\n\n\nagl-localdev\n: add a local layer named \u201cmeta-localdev\u201d in meta directory and a local.dev.inc conf file if present\n\n\nagl-sota\n: enable SOTA components and dependencies (meta-sota, meta-filesystems, meta-ruby, meta-rust are added)\n\n\n\n\n\n\n\n\nFor newer features or to get more details on a given feature, take a look at the configuration files stored for each feature and/or each machine in meta-agl/templates and meta-agl-extra/templates.",
+            "title": "Source code"
+        },
+        {
+            "location": "/user/getting-started/source-code/#download-agl-source-code",
+            "text": "The AGL source code and Yocto layers are maintained on the AGL Gerrit server. For information on how to create accounts for gerrit see Getting Started with AGL.",
+            "title": "Download AGL Source Code"
+        },
+        {
+            "location": "/user/getting-started/source-code/#prepare-repo-tool",
+            "text": "AGL Uses the Repo tool for managing repositories. First you need to setup layers of AGL. You can use the commands below to prepare Repo:  mkdir ~/bin\nexport PATH=~/bin:$PATH\ncurl https://storage.googleapis.com/git-repo-downloads/repo   ~/bin/repo\nchmod a+x ~/bin/repo",
+            "title": "Prepare Repo Tool"
+        },
+        {
+            "location": "/user/getting-started/source-code/#download-latest-stable-release",
+            "text": "To download all layers for the for the latest stable release, Blowfish 2.0.2:  repo init -b blowfish -m default_blowfish_2.0.2.xml -u https://gerrit.automotivelinux.org/gerrit/AGL/AGL-repo\nrepo sync",
+            "title": "Download Latest Stable Release"
+        },
+        {
+            "location": "/user/getting-started/source-code/#download-latest-on-blowfish-branch",
+            "text": "To download all layers on the current release branch which may be in the midst of testing or changes prior to the next stable release:  repo init -b blowfish -u https://gerrit.automotivelinux.org/gerrit/AGL/AGL-repo\nrepo sync",
+            "title": "Download Latest on Blowfish Branch"
+        },
+        {
+            "location": "/user/getting-started/source-code/#download-master-branch",
+            "text": "To download all code from master:  repo init -u https://gerrit.automotivelinux.org/gerrit/AGL/AGL-repo\nrepo sync",
+            "title": "Download Master Branch"
+        },
+        {
+            "location": "/user/getting-started/source-code/#set-up-build-environment",
+            "text": "Set up the development environment for the desired target hardware. AGL has created a set up script for defining the target build and desired optional features. To get a complete list of the options available run.    $ source meta-agl/scripts/aglsetup.sh -h  Once you run aglsetup.sh with your desired paramaters, you can build any target desired.",
+            "title": "Set up Build Environment"
+        },
+        {
+            "location": "/user/getting-started/source-code/#features-supported-by-aglsetup",
+            "text": "Here is the list of features for AGL 2.0 that can be specified in the aglsetup.sh command line:   in  meta-agl  agl-devel : activate development options (empty root password, debugger, strace, valgrind \u2026)  agl-netboot : enable network boot support through TFTP and NBD (see meta-netboot layer)    in  meta-agl-extra  agl-appfw-smack : enables IoT.bzh Application Framework + SMACK + Cynara  agl-demo : enable layer meta-agl-demo and meta-qt5 - required to build     * agl-demo-platform  agl-localdev : add a local layer named \u201cmeta-localdev\u201d in meta directory and a local.dev.inc conf file if present  agl-sota : enable SOTA components and dependencies (meta-sota, meta-filesystems, meta-ruby, meta-rust are added)     For newer features or to get more details on a given feature, take a look at the configuration files stored for each feature and/or each machine in meta-agl/templates and meta-agl-extra/templates.",
+            "title": "Features supported by aglsetup"
+        },
+        {
+            "location": "/user/getting-started/troubleshooting/",
+            "text": "Troubleshooting\n\n\nDue to a known bug in the upstream of meta-rust the Yocto/OE recipe for rust-cross may fail while building RVI SOTA Client or another application written in the Rust programming language. Until the complete resolution of the issue the workaround is to disable all use of the CXX11 ABI by applying the following lines to \nconf/local.conf\n:\n\n\nLD_CXXFLAGS_append = \n -D_GLIBCXX_USE_CXX11_ABI=0\n\nTARGET_CXXFLAGS_append = \n -D_GLIBCXX_USE_CXX11_ABI=0\n\nCXXFLAGS_append = \n -D_GLIBCXX_USE_CXX11_ABI=0\n\n\nBUILD_CXXFLAGS_remove_pn-gcc-runtime = \n-D_GLIBCXX_USE_CXX11_ABI=0\n\nTARGET_CXXFLAGS_remove_pn-gcc-runtime = \n-D_GLIBCXX_USE_CXX11_ABI=0\n CXXFLAGS_remove_pn-gcc-runtime = \n-D_GLIBCXX_USE_CXX11_ABI=0",
+            "title": "Troubleshooting"
+        },
+        {
+            "location": "/user/getting-started/troubleshooting/#troubleshooting",
+            "text": "Due to a known bug in the upstream of meta-rust the Yocto/OE recipe for rust-cross may fail while building RVI SOTA Client or another application written in the Rust programming language. Until the complete resolution of the issue the workaround is to disable all use of the CXX11 ABI by applying the following lines to  conf/local.conf :  LD_CXXFLAGS_append =   -D_GLIBCXX_USE_CXX11_ABI=0 \nTARGET_CXXFLAGS_append =   -D_GLIBCXX_USE_CXX11_ABI=0 \nCXXFLAGS_append =   -D_GLIBCXX_USE_CXX11_ABI=0 \n\nBUILD_CXXFLAGS_remove_pn-gcc-runtime =  -D_GLIBCXX_USE_CXX11_ABI=0 \nTARGET_CXXFLAGS_remove_pn-gcc-runtime =  -D_GLIBCXX_USE_CXX11_ABI=0  CXXFLAGS_remove_pn-gcc-runtime =  -D_GLIBCXX_USE_CXX11_ABI=0",
+            "title": "Troubleshooting"
+        },
+        {
+            "location": "/user/getting-started/footers/porter-footer/",
+            "text": "Weston\n\n\nIf Weston fails to start double check /etc/xdg/weston/weston.ini and verify that the output name and screen resolution matches the configured U-Boot environment, for example on Renesas Porter board rev 1.0 with screen resolution 1024x768:\n\n\n[core]\nshell=desktop-shell.so\nbackend=drm-backend.so\n\n[shell]\nlocking=true\n# Uncomment below to hide panel\n#panel-location=none\n\n[output]\n#name=Virtual-1\nname=HDMI-A-1\nmode=1024x768",
+            "title": "Porter footer"
+        },
+        {
+            "location": "/user/getting-started/footers/porter-footer/#weston",
+            "text": "If Weston fails to start double check /etc/xdg/weston/weston.ini and verify that the output name and screen resolution matches the configured U-Boot environment, for example on Renesas Porter board rev 1.0 with screen resolution 1024x768:  [core]\nshell=desktop-shell.so\nbackend=drm-backend.so\n\n[shell]\nlocking=true\n# Uncomment below to hide panel\n#panel-location=none\n\n[output]\n#name=Virtual-1\nname=HDMI-A-1\nmode=1024x768",
+            "title": "Weston"
+        },
+        {
+            "location": "/user/getting-started/footers/raspberrypi-footer/",
+            "text": "Commercial Licensed Packages\n\n\nAppend to following lines to \nconf/local.conf\n to include libomxil under a commercial license to your build:\n\n\n# For libomxil\nLICENSE_FLAGS_WHITELIST = \ncommercial\n\n\nIMAGE_INSTALL_append = \n libomxil\n\n\n\n\n\nRaspberry Pi Touchscreen with Rotation\n\n\nIf you have Raspberry Pi official 7\" touchscreen connected, you can rotate it with these lines in /etc/xdg/weston/weston.ini\n\n\nroot@raspberrypi3:/etc/xdg/weston# cat weston.ini\n[core]\nbackend=drm-backend.so\nshell=desktop-shell.so\n\n[shell]\nlocking=true\n# Uncomment below to hide panel\n#panel-location=none\n\n[launcher]\nicon=/usr/share/weston/terminal.png\npath=/usr/bin/weston-terminal\n\n[launcher]\nicon=/usr/share/weston/icon_flower.png\npath=/usr/bin/weston-flower\n\n[output]\nname=DSI-1\ntransform=270\n\n\n\n\nDebugging\n\n\nIt is possible to debug AGL images on Raspberry Pi using 3.3V USB to serial cable, such as \nOlimex USB-Serial-Cable-F\n, connected to the UART of the board. Follow the instructions below to connect a cable to the board (do it on your own risk, no warranty is provided):\n\n\n\n\nConnect the BLUE wire if you are using Olimex USB-Serial-Cable-F to pin 6 of Raspberry Pi,\n\n\nConnect the RX line of the cable (GREEN wire if you are using Olimex USB-Serial-Cable-F) to pin 8 (TX line) of Raspberry Pi,\n\n\nConnect the TX line of the cable (RED wire if you are using Olimex USB-Serial-Cable-F) to pin 10 (RX line) of Raspberry Pi.\n\n\n\n\n\n\n\n\nPlug the USB connector of the cable to your computer and use your favorite tool for serial communication, for example on Ubuntu and other Linux distributions you may use screen:\n\n\n\n\nsudo screen /dev/ttyUSB0 115200\n\n\n\n\nPay attention that the colours of the cable may vary depending on the vendor. If you have USB console cable from Adafruit please have a look \nhere\n.",
+            "title": "Raspberrypi footer"
+        },
+        {
+            "location": "/user/getting-started/footers/raspberrypi-footer/#commercial-licensed-packages",
+            "text": "Append to following lines to  conf/local.conf  to include libomxil under a commercial license to your build:  # For libomxil\nLICENSE_FLAGS_WHITELIST =  commercial \n\nIMAGE_INSTALL_append =   libomxil",
+            "title": "Commercial Licensed Packages"
+        },
+        {
+            "location": "/user/getting-started/footers/raspberrypi-footer/#raspberry-pi-touchscreen-with-rotation",
+            "text": "If you have Raspberry Pi official 7\" touchscreen connected, you can rotate it with these lines in /etc/xdg/weston/weston.ini  root@raspberrypi3:/etc/xdg/weston# cat weston.ini\n[core]\nbackend=drm-backend.so\nshell=desktop-shell.so\n\n[shell]\nlocking=true\n# Uncomment below to hide panel\n#panel-location=none\n\n[launcher]\nicon=/usr/share/weston/terminal.png\npath=/usr/bin/weston-terminal\n\n[launcher]\nicon=/usr/share/weston/icon_flower.png\npath=/usr/bin/weston-flower\n\n[output]\nname=DSI-1\ntransform=270",
+            "title": "Raspberry Pi Touchscreen with Rotation"
+        },
+        {
+            "location": "/user/getting-started/footers/raspberrypi-footer/#debugging",
+            "text": "It is possible to debug AGL images on Raspberry Pi using 3.3V USB to serial cable, such as  Olimex USB-Serial-Cable-F , connected to the UART of the board. Follow the instructions below to connect a cable to the board (do it on your own risk, no warranty is provided):   Connect the BLUE wire if you are using Olimex USB-Serial-Cable-F to pin 6 of Raspberry Pi,  Connect the RX line of the cable (GREEN wire if you are using Olimex USB-Serial-Cable-F) to pin 8 (TX line) of Raspberry Pi,  Connect the TX line of the cable (RED wire if you are using Olimex USB-Serial-Cable-F) to pin 10 (RX line) of Raspberry Pi.     Plug the USB connector of the cable to your computer and use your favorite tool for serial communication, for example on Ubuntu and other Linux distributions you may use screen:   sudo screen /dev/ttyUSB0 115200  Pay attention that the colours of the cable may vary depending on the vendor. If you have USB console cable from Adafruit please have a look  here .",
+            "title": "Debugging"
+        },
+        {
+            "location": "/user/getting-started/machines/porter/",
+            "text": "Building the AGL Demo Platform for Renesas Porter\n\n\n\n\n\n\nDownload Renesas \ngraphics drivers with a \"click through\" license from Renesas website\n in directory ~/Downloads (or $XDG_DOWNLOAD_DIR).\n\n\n\n\n\n\nTo build AGL demo platform for Renesas Porter board use machine \nporter\n and feature \nagl-demo\n:\n\n\n\n\n\n\nsource meta-agl/scripts/aglsetup.sh -m porter agl-demo agl-netboot agl-appfw-smack\nbitbake agl-demo-platform\n\n\n\n\nBooting AGL Demo Platform on Renesas Porter\n\n\nDeployment\n\n\nOn the host\n\n\n\n\nPlug microSD card and get its associated device by either running \ndmesg | tail -15\n or \nlsblk\n, for example:\n\n\n\n\ndmesg | tail -15\n[ 1971.462160] sd 6:0:0:0: [sdc] Mode Sense: 03 00 00 00\n[ 1971.462277] sd 6:0:0:0: [sdc] No Caching mode page found\n[ 1971.462278] sd 6:0:0:0: [sdc] Assuming drive cache: write through\n[ 1971.463870]  sdc: sdc1 sdc2\n\n\n\n\nlsblk\nNAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT\nsda      8:0    0 167,7G  0 disk \n\u251c\u2500sda1   8:1    0   512M  0 part /boot/efi\n\u251c\u2500sda2   8:2    0 159,3G  0 part /\n\u2514\u2500sda3   8:3    0   7,9G  0 part [SWAP]\nsdb      8:16   0 931,5G  0 disk \n\u2514\u2500sdb1   8:17   0 931,5G  0 part /media/storage\nsdc      8:32   1  14,9G  0 disk \n\u251c\u2500sdc1   8:33   1    40M  0 part \n\u2514\u2500sdc2   8:34   1   788M  0 part \n\n\n\n\nNote: In the \nexamples\n above, 'sdc' corresponds to the microSD card.\n\n\n\n\nCreate EXT3 partition on the SD-card using fdisk or another application. For \nexample\n, if the microSD card is \n/dev/sdc\n:\n\n\n\n\nsudo fdisk /dev/sdc\n\nWelcome to fdisk (util-linux 2.27.1).\nChanges will remain in memory only, until you decide to write them.\nBe careful before using the write command.\n\n\nCommand (m for help): o\nCreated a new DOS disklabel with disk identifier 0x96e5850d.\n\nCommand (m for help): n\nPartition type\n   p   primary (0 primary, 0 extended, 4 free)\n   e   extended (container for logical partitions)\nSelect (default p): \n\nUsing default response p.\nPartition number (1-4, default 1): \nFirst sector (2048-31291391, default 2048): \nLast sector, +sectors or +size{K,M,G,T,P} (2048-31291391, default 31291391): \n\nCreated a new partition 1 of type 'Linux' and of size 14,9 GiB.\n\nCommand (m for help): w\nThe partition table has been altered.\nCalling ioctl() to re-read partition table.\nSyncing disks.\n\n\n\n\n\n\nInitialize the ext3 partition using \u201cmke2fs\u201d, for \nexample\n if the microSD card is associated with \nsdc\n:\n\n\n\n\nsudo mke2fs -t ext3 /dev/sdc1\nmke2fs 1.42.13 (17-May-2015)\nCreating filesystem with 3911168 4k blocks and 979200 inodes\nFilesystem UUID: 690804b9-6c7d-4bbb-b1c1-e9357efabc52\nSuperblock backups stored on blocks: \n    32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208\n\nAllocating group tables: done                            \nWriting inode tables: done                            \nCreating journal (32768 blocks): done\nWriting superblocks and filesystem accounting information: done \n\n\n\n\n\n\nMount the microSD card partition, for example \nexample\n if the microSD card is associated with \nsdc\n:\n\n\n\n\nmkdir /tmp/agl\nsudo mount /dev/sdc1 /tmp/agl/\n\n\n\n\nNote: Please replace /dev/sdc with the actual path for your microSD card.\n\n\n\n\nGo to your build directory:\n\n\n\n\ncd $BUILDDIR/tmp/deploy/images/porter\n\n\n\n\n\n\nMake sure the filesystem is empty:\n\n\n\n\nsudo rm -rf /tmp/agl/*\n\n\n\n\n\n\nVerify that \ntar\n version is 1.28 or newer:\n\n\n\n\ntar --version\ntar (GNU tar) 1.28\nCopyright (C) 2014 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later \nhttp://gnu.org/licenses/gpl.html\n.\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n\nWritten by John Gilmore and Jay Fenlason.\n\n\n\n\n\n\nCopy Automotive Grade Linux (AGL) files onto the mircoSD card by extracting the root file system archive:\n\n\n\n\nsudo tar --extract --numeric-owner --preserve-permissions --preserve-order --totals \\\n           --directory=/tmp/agl --file=agl-demo-platform-porter.tar.bz2\n\n\n\n\n\n\nCopy Kernel Image and Device Tree Blob file into the \nboot\n directory:\n\n\n\n\nsudo cp uImage+dtb /tmp/agl/boot/\n\n\n\n\n\n\nEnsure the changes have been written to the disk:\n\n\n\n\nsync\n\n\n\n\n\n\nUnmount the micrSD card:\n\n\n\n\nsudo umount /tmp/agl\n\n\n\n\n\n\nPlug the microSD card in Renesas Porter board.\n\n\n\n\nTo access the shell (serial)\n\n\n\n\nWith the Porter board powered off, connect the 'Debug Serial 0' port on the board (for Porter mini-USB port close to on/off switch) with the host PC using the USB cable.\n\n\nUse \nscreen\n to access the serial debug console (may needs to \napt-get install screen\n):\n\n\n\n\nsudo screen /dev/ttyUSB0 38400\n\n\n\n\nNote: Alternatively, start a terminal emulator, such as 'minicom' or 'picocom', on the host, connecting to the USB serial port (/dev/ttyUSB0) with 38400, 8n1 settings.\n\n\n\n\nPower on the Porter board to see a shell on the console\n\n\n\n\nOn the target board\n\n\nIt is assumed that the Renesas Porter board already has u-boot running as second stage boot loader.\n\n\nU-Boot configurations\n\n\nFollow the steps below to configure boot from microSD card and to set screen resolution:\n\n\n\n\nPower up the board and, using your preferred terminal emulator, stop the board's autoboot and type \nprint\n to check the environment:\n\n\n\n\nprint\n\n\n\n\n\n\nVerify that the ethaddr environment variable is set to the same MAC address value shown on the label on top of the RJ45 Ethernet connector. If not please set it using the following command:\n\n\n\n\nsetenv ethaddr \nMAC address\n\n\n\n\n\nFor example:\n\n\nsetenv ethaddr 2e:09:0a:00:75:b5\n\n\n\n\n\n\nSet the follow environment variables:\n\n\n\n\nsetenv bootargs_console 'console=ttySC6,38400 ignore_loglevel'\nsetenv bootargs_video 'vmalloc=384M video=HDMI-A-1:1920x1080-32@60'\nsetenv bootargs_root 'root=/dev/mmcblk0p1 rootdelay=3 rw rootfstype=ext3 rootwait'\nsetenv bootmmc '1:1'\nsetenv bootcmd_sd 'ext4load mmc ${bootmmc} 0x40007fc0 boot/uImage+dtb'\nsetenv bootcmd 'setenv bootargs ${bootargs_console} ${bootargs_video} ${bootargs_root}; run bootcmd_sd; bootm 0x40007fc0'\n\n\n\n\nWARNINGS:\n\n\nIf no display shows up when booting, e.g. for a non-full HD screen, replace  \n1920x1080\n value in the \nbootargs_video\n variable with lower screen resolution such as \n1024x768\n. Unfortunately for the moment there are no universally supported setting.\n\n\nDepending on your board (Porter rev B or rev C, Koelsch etc.), the SD card slots may differ. Try setting \nbootmmc\n to \n0:1\n or \n2:1\n depending on the slot and card format.\n\n\nFor Renesas Porter Rev 1.0 use screen resolution \n1024x768\n and set \nbootmmc\n to \n2:1\n.\n\n\n\n\nSave the environment variables:\n\n\n\n\nsaveenv\n\n\n\n\n\n\nReboot:\n\n\n\n\nreset",
+            "title": "Porter"
+        },
+        {
+            "location": "/user/getting-started/machines/porter/#building-the-agl-demo-platform-for-renesas-porter",
+            "text": "Download Renesas  graphics drivers with a \"click through\" license from Renesas website  in directory ~/Downloads (or $XDG_DOWNLOAD_DIR).    To build AGL demo platform for Renesas Porter board use machine  porter  and feature  agl-demo :    source meta-agl/scripts/aglsetup.sh -m porter agl-demo agl-netboot agl-appfw-smack\nbitbake agl-demo-platform",
+            "title": "Building the AGL Demo Platform for Renesas Porter"
+        },
+        {
+            "location": "/user/getting-started/machines/porter/#booting-agl-demo-platform-on-renesas-porter",
+            "text": "",
+            "title": "Booting AGL Demo Platform on Renesas Porter"
+        },
+        {
+            "location": "/user/getting-started/machines/porter/#deployment",
+            "text": "",
+            "title": "Deployment"
+        },
+        {
+            "location": "/user/getting-started/machines/porter/#on-the-host",
+            "text": "Plug microSD card and get its associated device by either running  dmesg | tail -15  or  lsblk , for example:   dmesg | tail -15\n[ 1971.462160] sd 6:0:0:0: [sdc] Mode Sense: 03 00 00 00\n[ 1971.462277] sd 6:0:0:0: [sdc] No Caching mode page found\n[ 1971.462278] sd 6:0:0:0: [sdc] Assuming drive cache: write through\n[ 1971.463870]  sdc: sdc1 sdc2  lsblk\nNAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT\nsda      8:0    0 167,7G  0 disk \n\u251c\u2500sda1   8:1    0   512M  0 part /boot/efi\n\u251c\u2500sda2   8:2    0 159,3G  0 part /\n\u2514\u2500sda3   8:3    0   7,9G  0 part [SWAP]\nsdb      8:16   0 931,5G  0 disk \n\u2514\u2500sdb1   8:17   0 931,5G  0 part /media/storage\nsdc      8:32   1  14,9G  0 disk \n\u251c\u2500sdc1   8:33   1    40M  0 part \n\u2514\u2500sdc2   8:34   1   788M  0 part   Note: In the  examples  above, 'sdc' corresponds to the microSD card.   Create EXT3 partition on the SD-card using fdisk or another application. For  example , if the microSD card is  /dev/sdc :   sudo fdisk /dev/sdc\n\nWelcome to fdisk (util-linux 2.27.1).\nChanges will remain in memory only, until you decide to write them.\nBe careful before using the write command.\n\n\nCommand (m for help): o\nCreated a new DOS disklabel with disk identifier 0x96e5850d.\n\nCommand (m for help): n\nPartition type\n   p   primary (0 primary, 0 extended, 4 free)\n   e   extended (container for logical partitions)\nSelect (default p): \n\nUsing default response p.\nPartition number (1-4, default 1): \nFirst sector (2048-31291391, default 2048): \nLast sector, +sectors or +size{K,M,G,T,P} (2048-31291391, default 31291391): \n\nCreated a new partition 1 of type 'Linux' and of size 14,9 GiB.\n\nCommand (m for help): w\nThe partition table has been altered.\nCalling ioctl() to re-read partition table.\nSyncing disks.   Initialize the ext3 partition using \u201cmke2fs\u201d, for  example  if the microSD card is associated with  sdc :   sudo mke2fs -t ext3 /dev/sdc1\nmke2fs 1.42.13 (17-May-2015)\nCreating filesystem with 3911168 4k blocks and 979200 inodes\nFilesystem UUID: 690804b9-6c7d-4bbb-b1c1-e9357efabc52\nSuperblock backups stored on blocks: \n    32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208\n\nAllocating group tables: done                            \nWriting inode tables: done                            \nCreating journal (32768 blocks): done\nWriting superblocks and filesystem accounting information: done    Mount the microSD card partition, for example  example  if the microSD card is associated with  sdc :   mkdir /tmp/agl\nsudo mount /dev/sdc1 /tmp/agl/  Note: Please replace /dev/sdc with the actual path for your microSD card.   Go to your build directory:   cd $BUILDDIR/tmp/deploy/images/porter   Make sure the filesystem is empty:   sudo rm -rf /tmp/agl/*   Verify that  tar  version is 1.28 or newer:   tar --version\ntar (GNU tar) 1.28\nCopyright (C) 2014 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later  http://gnu.org/licenses/gpl.html .\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n\nWritten by John Gilmore and Jay Fenlason.   Copy Automotive Grade Linux (AGL) files onto the mircoSD card by extracting the root file system archive:   sudo tar --extract --numeric-owner --preserve-permissions --preserve-order --totals \\\n           --directory=/tmp/agl --file=agl-demo-platform-porter.tar.bz2   Copy Kernel Image and Device Tree Blob file into the  boot  directory:   sudo cp uImage+dtb /tmp/agl/boot/   Ensure the changes have been written to the disk:   sync   Unmount the micrSD card:   sudo umount /tmp/agl   Plug the microSD card in Renesas Porter board.",
+            "title": "On the host"
+        },
+        {
+            "location": "/user/getting-started/machines/porter/#to-access-the-shell-serial",
+            "text": "With the Porter board powered off, connect the 'Debug Serial 0' port on the board (for Porter mini-USB port close to on/off switch) with the host PC using the USB cable.  Use  screen  to access the serial debug console (may needs to  apt-get install screen ):   sudo screen /dev/ttyUSB0 38400  Note: Alternatively, start a terminal emulator, such as 'minicom' or 'picocom', on the host, connecting to the USB serial port (/dev/ttyUSB0) with 38400, 8n1 settings.   Power on the Porter board to see a shell on the console",
+            "title": "To access the shell (serial)"
+        },
+        {
+            "location": "/user/getting-started/machines/porter/#on-the-target-board",
+            "text": "It is assumed that the Renesas Porter board already has u-boot running as second stage boot loader.",
+            "title": "On the target board"
+        },
+        {
+            "location": "/user/getting-started/machines/porter/#u-boot-configurations",
+            "text": "Follow the steps below to configure boot from microSD card and to set screen resolution:   Power up the board and, using your preferred terminal emulator, stop the board's autoboot and type  print  to check the environment:   print   Verify that the ethaddr environment variable is set to the same MAC address value shown on the label on top of the RJ45 Ethernet connector. If not please set it using the following command:   setenv ethaddr  MAC address   For example:  setenv ethaddr 2e:09:0a:00:75:b5   Set the follow environment variables:   setenv bootargs_console 'console=ttySC6,38400 ignore_loglevel'\nsetenv bootargs_video 'vmalloc=384M video=HDMI-A-1:1920x1080-32@60'\nsetenv bootargs_root 'root=/dev/mmcblk0p1 rootdelay=3 rw rootfstype=ext3 rootwait'\nsetenv bootmmc '1:1'\nsetenv bootcmd_sd 'ext4load mmc ${bootmmc} 0x40007fc0 boot/uImage+dtb'\nsetenv bootcmd 'setenv bootargs ${bootargs_console} ${bootargs_video} ${bootargs_root}; run bootcmd_sd; bootm 0x40007fc0'  WARNINGS:  If no display shows up when booting, e.g. for a non-full HD screen, replace   1920x1080  value in the  bootargs_video  variable with lower screen resolution such as  1024x768 . Unfortunately for the moment there are no universally supported setting.  Depending on your board (Porter rev B or rev C, Koelsch etc.), the SD card slots may differ. Try setting  bootmmc  to  0:1  or  2:1  depending on the slot and card format.  For Renesas Porter Rev 1.0 use screen resolution  1024x768  and set  bootmmc  to  2:1 .   Save the environment variables:   saveenv   Reboot:   reset",
+            "title": "U-Boot configurations"
+        },
+        {
+            "location": "/user/getting-started/machines/qemu/",
+            "text": "Building the AGL Demo Platform for QEMU\n\n\nTo build the QEMU version of the AGL demo platform use machine \nqemux86-64\n and feature \nagl-demo\n:\n\n\nsource meta-agl/scripts/aglsetup.sh -m qemux86-64 agl-demo agl-netboot agl-appfw-smack\nbitbake agl-demo-platform",
+            "title": "Qemu"
+        },
+        {
+            "location": "/user/getting-started/machines/qemu/#building-the-agl-demo-platform-for-qemu",
+            "text": "To build the QEMU version of the AGL demo platform use machine  qemux86-64  and feature  agl-demo :  source meta-agl/scripts/aglsetup.sh -m qemux86-64 agl-demo agl-netboot agl-appfw-smack\nbitbake agl-demo-platform",
+            "title": "Building the AGL Demo Platform for QEMU"
+        },
+        {
+            "location": "/user/getting-started/machines/raspberrypi/",
+            "text": "Building the AGL Demo Platform for Raspberry Pi\n\n\nRaspberry Pi 3\n\n\nTo build AGL demo platform for Raspberry Pi 3 use machine \nraspberrypi3\n and feature \nagl-demo\n:\n\n\nsource meta-agl/scripts/aglsetup.sh -m raspberrypi3 agl-demo agl-netboot agl-appfw-smack\nbitbake agl-demo-platform\n\n\n\n\nRaspberry Pi 2\n\n\nTo build AGL demo platform for Raspberry Pi 2 use machine \nraspberrypi2\n and feature \nagl-demo\n:\n\n\nsource meta-agl/scripts/aglsetup.sh -m raspberrypi2 agl-demo agl-netboot agl-appfw-smack\nbitbake agl-demo-platform\n\n\n\n\nBooting AGL Demo Platform on Raspberry Pi\n\n\nFollow the steps below to copy the image to microSD card and to boot it on Raspberry Pi 2 or 3:\n\n\n\n\nConnect your sdcard in your linux machine.\n\n\nCopy output image from build machine to linux machine that is connected your sdcard. (Often, those are same machines)\n\n\nOutput Image location in build machine for Raspberry Pi 2: \ntmp/deploy/images/raspberrypi2/agl-demo-platform-raspberrypi2.rpi-sdimg\n\n\nOutput Image location in build machine for Raspberry Pi 3: \ntmp/deploy/images/raspberrypi3/agl-demo-platform-raspberrypi3.rpi-sdimg\n\n\nUnmount the microSD card and after that flash output image to it card with root user:\n\n\n\n\nsudo umount [sdcard device]\nsudo dd if=[output image] of=[sdcard device] bs=4M\nsync\n\n\n\n\n\n\nPlug your microSD card into Raspberry Pi 2 or 3 and boot the board",
+            "title": "Raspberrypi"
+        },
+        {
+            "location": "/user/getting-started/machines/raspberrypi/#building-the-agl-demo-platform-for-raspberry-pi",
+            "text": "",
+            "title": "Building the AGL Demo Platform for Raspberry Pi"
+        },
+        {
+            "location": "/user/getting-started/machines/raspberrypi/#raspberry-pi-3",
+            "text": "To build AGL demo platform for Raspberry Pi 3 use machine  raspberrypi3  and feature  agl-demo :  source meta-agl/scripts/aglsetup.sh -m raspberrypi3 agl-demo agl-netboot agl-appfw-smack\nbitbake agl-demo-platform",
+            "title": "Raspberry Pi 3"
+        },
+        {
+            "location": "/user/getting-started/machines/raspberrypi/#raspberry-pi-2",
+            "text": "To build AGL demo platform for Raspberry Pi 2 use machine  raspberrypi2  and feature  agl-demo :  source meta-agl/scripts/aglsetup.sh -m raspberrypi2 agl-demo agl-netboot agl-appfw-smack\nbitbake agl-demo-platform",
+            "title": "Raspberry Pi 2"
+        },
+        {
+            "location": "/user/getting-started/machines/raspberrypi/#booting-agl-demo-platform-on-raspberry-pi",
+            "text": "Follow the steps below to copy the image to microSD card and to boot it on Raspberry Pi 2 or 3:   Connect your sdcard in your linux machine.  Copy output image from build machine to linux machine that is connected your sdcard. (Often, those are same machines)  Output Image location in build machine for Raspberry Pi 2:  tmp/deploy/images/raspberrypi2/agl-demo-platform-raspberrypi2.rpi-sdimg  Output Image location in build machine for Raspberry Pi 3:  tmp/deploy/images/raspberrypi3/agl-demo-platform-raspberrypi3.rpi-sdimg  Unmount the microSD card and after that flash output image to it card with root user:   sudo umount [sdcard device]\nsudo dd if=[output image] of=[sdcard device] bs=4M\nsync   Plug your microSD card into Raspberry Pi 2 or 3 and boot the board",
+            "title": "Booting AGL Demo Platform on Raspberry Pi"
+        }
+    ]
+}
