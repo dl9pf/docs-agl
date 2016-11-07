@@ -4,7 +4,7 @@
 
 ### Downloading pre-built images (snapshots)
 
-### [Building the Source Code](./docs/source-code.md)
+### [Building the Source Code](./../source-code.md)
 
 ### Reporting Bugs/Enhancements
 
