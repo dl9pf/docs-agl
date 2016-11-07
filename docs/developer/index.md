@@ -1,6 +1,6 @@
 # Developer Documentation
 
-## Developer onboarding 
+## Developer onboarding
 
 ## AGL Single-Sign-On (LF ID)
 
