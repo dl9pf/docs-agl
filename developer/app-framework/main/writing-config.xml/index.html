@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Writing config.xml - AGL Documentation</title>
+        <link href="../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../../css/highlight.css">
+        <link href="../../../../agl.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../../..">AGL Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../../../..">Home</a>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Developer <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">App framework</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../">Home</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Binder</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../binder/FAQ/">FAQ</a>
+</li>
+            
+<li >
+    <a href="../../binder/afb-application-writing/">Afb application writing</a>
+</li>
+            
+<li >
+    <a href="../../binder/afb-bindings-overview/">Afb bindings overview</a>
+</li>
+            
+<li >
+    <a href="../../binder/afb-bindings-writing/">Afb bindings writing</a>
+</li>
+            
+<li >
+    <a href="../../binder/afb-daemon-vocabulary/">Afb daemon vocabulary</a>
+</li>
+            
+<li >
+    <a href="../../binder/afb-events-guide/">Afb events guide</a>
+</li>
+            
+<li >
+    <a href="../../binder/afb-overview/">Afb overview</a>
+</li>
+            
+<li >
+    <a href="../../binder/afb-tests-overview/">Afb tests overview</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Main</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../afm-system-daemon/">Afm system daemon</a>
+</li>
+            
+<li >
+    <a href="../afm-user-daemon/">Afm user daemon</a>
+</li>
+            
+<li >
+    <a href="../application-framework/">Application framework</a>
+</li>
+            
+<li >
+    <a href="../">Home</a>
+</li>
+            
+<li >
+    <a href="../overview/">Overview</a>
+</li>
+            
+<li >
+    <a href="../quick-tutorial/">Quick tutorial</a>
+</li>
+            
+<li >
+    <a href="../security-framework/">Security framework</a>
+</li>
+            
+<li >
+    <a href="../widgets/">Widgets</a>
+</li>
+            
+<li class="active">
+    <a href="./">Writing config.xml</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Audio</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../audio/">Home</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Sec blueprint</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../sec-blueprint/01-overview/">01 overview</a>
+</li>
+            
+<li >
+    <a href="../../../sec-blueprint/02-plateform-security/">02 plateform security</a>
+</li>
+            
+<li >
+    <a href="../../../sec-blueprint/03-security-concepts/">03 security concepts</a>
+</li>
+            
+<li >
+    <a href="../../../sec-blueprint/04-adversaries/">04 adversaries</a>
+</li>
+            
+<li >
+    <a href="../../../sec-blueprint/04-threat-analysis/">04 threat analysis</a>
+</li>
+            
+<li >
+    <a href="../../../sec-blueprint/06-attack-surfaces/">06 attack surfaces</a>
+</li>
+            
+<li >
+    <a href="../../../sec-blueprint/">Home</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Signaling</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../signaling/architecture/">Architecture</a>
+</li>
+            
+<li >
+    <a href="../../../signaling/">Home</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Getting started</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../user/getting-started/source-code/">Source code</a>
+</li>
+            
+<li >
+    <a href="../../../../user/getting-started/troubleshooting/">Troubleshooting</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Footers</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../user/getting-started/footers/porter-footer/">Porter footer</a>
+</li>
+            
+<li >
+    <a href="../../../../user/getting-started/footers/raspberrypi-footer/">Raspberrypi footer</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Machines</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../user/getting-started/machines/porter/">Porter</a>
+</li>
+            
+<li >
+    <a href="../../../../user/getting-started/machines/qemu/">Qemu</a>
+</li>
+            
+<li >
+    <a href="../../../../user/getting-started/machines/raspberrypi/">Raspberrypi</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../widgets/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../../audio/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/automotive-grade-linux/docs-agl">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#writing-the-configuration-file-configxml">Writing the configuration file "config.xml"</a></li>
+            <li><a href="#about-configxml">About "config.xml"</a></li>
+            <li><a href="#example-of-configxml">Example of "config.xml"</a></li>
+            <li><a href="#standard-elements-of-configxml">Standard elements of "config.xml"</a></li>
+            <li><a href="#known-widget-types-and-content">Known widget types and content</a></li>
+            <li><a href="#agl-features">AGL features</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="writing-the-configuration-file-configxml">Writing the configuration file "config.xml"</h1>
+<h2 id="about-configxml">About "config.xml"</h2>
+<p>The file <strong>config.xml</strong> describes important data of the application
+to the framework:</p>
+<ul>
+<li>the unique identifier of the application</li>
+<li>the name of the application</li>
+<li>the type of the application</li>
+<li>the icon of the application</li>
+<li>the permissions linked to the application</li>
+<li>the services and dependancies of the application</li>
+</ul>
+<p>The file MUST be at the root of the widget and MUST be case sensitively name
+<strong><em>config.xml</em></strong>.</p>
+<p>The file <strong>config.xml</strong> is a XML file described by the document
+<a href="http://www.w3.org/TR/widgets" title="Packaged Web Apps">widgets</a>.</p>
+<h2 id="example-of-configxml">Example of "config.xml"</h2>
+<p>Here is the example of the config file for the QML application SmartHome.</p>
+<pre><code class="xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;widget xmlns=&quot;http://www.w3.org/ns/widgets&quot; id=&quot;smarthome&quot; version=&quot;0.1&quot;&gt;
+  &lt;name&gt;SmartHome&lt;/name&gt;
+  &lt;icon src=&quot;smarthome.png&quot;/&gt;
+  &lt;content src=&quot;qml/smarthome/smarthome.qml&quot; type=&quot;text/vnd.qt.qml&quot;/&gt;
+  &lt;description&gt;
+    This is the Smarthome QML demo application.
+    It shows some user interfaces for controlling an automated house.
+    The user interface is completely done with QML.
+  &lt;/description&gt;
+  &lt;author&gt;Qt team&lt;/author&gt;
+  &lt;license&gt;GPL&lt;/license&gt;
+&lt;/widget&gt;
+</code></pre>
+
+<h2 id="standard-elements-of-configxml">Standard elements of "config.xml"</h2>
+<h3 id="the-element-widget">The element widget</h3>
+<h4 id="the-attribute-id-of-widget">the attribute id of widget</h4>
+<p>The attribute <em>id</em> is mandatory (for version 2.x, blowfish) and must be unique.</p>
+<p>Values for <em>id</em> are any non empty string containing only latin letters,
+arabic digits, and the three characters '.' (dot), '-' (dash) and
+'_' (underscore).</p>
+<p>Authors can use a mnemonic id or can pick a unique id using
+command <strong>uuid</strong> or <strong>uuidgen</strong>.</p>
+<h4 id="the-attribute-version-of-widget">the attribute version of widget</h4>
+<p>The attribute <em>version</em> is mandatory (for version 2.x, blowfish).</p>
+<p>Values for <em>id</em> are any non empty string containing only latin letters,
+arabic digits, and the three characters '.' (dot), '-' (dash) and
+'_' (underscore).</p>
+<p>Version values are dot separated fields MAJOR.MINOR.REVISION.</p>
+<h3 id="the-element-content">The element content</h3>
+<p>The element <em>content</em> is mandatory (for version 2.x, blowfish) and must designate a file
+(subject to localisation) with its attribute <em>src</em>.</p>
+<p>The content designed depends on its type. See below for the known types.</p>
+<h3 id="the-element-icon">The element icon</h3>
+<p>The element <em>icon</em> is mandatory (for version 2.x, blowfish) and must
+be unique. It must designate an image file with its attribute <em>src</em>.</p>
+<h2 id="known-widget-types-and-content">Known widget types and content</h2>
+<p>The configuration file <strong><em>/etc/afm/afm-launch.conf</em></strong> defines the types
+of widget known and how to launch it.</p>
+<p>Known types for the type of content are (for version 2.x, blowfish):</p>
+<ul>
+<li>
+<p><strong><em>text/html</em></strong>: 
+   HTML application,
+   content.src designates the home page of the application</p>
+</li>
+<li>
+<p><strong><em>application/x-executable</em></strong>:
+   Native application,
+   content.src designates the relative path of the binary</p>
+</li>
+<li>
+<p><strong><em>application/vnd.agl.url</em></strong>:
+   Internet url,
+   content.src designates the url to be used</p>
+</li>
+<li>
+<p><strong><em>application/vnd.agl.service</em></strong>:
+   AGL service defined as a binder,
+   content.src designates the directory of provided binders,
+   http content, if any, must be put in the subdirectory <strong><em>htdocs</em></strong> of the widget</p>
+</li>
+<li>
+<p><strong><em>application/vnd.agl.native</em></strong>:
+   Native application with AGL service defined as a binder,
+   content.src designates the relative path of the binary,
+   bindings, if any must be put in the subdirectory <strong><em>lib</em></strong> of the widget,
+   http content, if any, must be put in the subdirectory <strong><em>htdocs</em></strong> of the widget</p>
+</li>
+<li>
+<p><strong><em>text/vnd.qt.qml</em></strong>, <strong><em>application/vnd.agl.qml</em></strong>:
+   QML application,
+   content.src designate the relative path of the QML root,
+   imports must be put in the subdirectory <strong><em>imports</em></strong> of the widget</p>
+</li>
+<li>
+<p><strong><em>application/vnd.agl.qml.hybrid</em></strong>:
+   QML application with bindings,
+   content.src designate the relative path of the QML root,
+   bindings, if any must be put in the subdirectory <strong><em>lib</em></strong> of the widget,
+   imports must be put in the subdirectory <strong><em>imports</em></strong> of the widget</p>
+</li>
+<li>
+<p><strong><em>application/vnd.agl.html.hybrid</em></strong>:
+   HTML application,
+   content.src designates the home page of the application,
+   bindings, if any must be put in the subdirectory <strong><em>lib</em></strong> of the widget,
+   http content must be put in the subdirectory <strong><em>htdocs</em></strong> of the widget</p>
+</li>
+</ul>
+<h2 id="agl-features">AGL features</h2>
+<p>The AGL framework uses the feature tag for specifying security and binding
+requirement of the widget.</p>
+<p>The current version of AGL (up to 2.0.1, blowfish) has no fully implemented
+features.</p>
+<p>The features planned to be implemented are described below.</p>
+<h3 id="feature-nameurnaglrequired-binding">feature name="urn:AGL:required-binding"</h3>
+<p>List of the bindings required by the widget.</p>
+<p>Each required binding must be explicited using a <param> entry.</p>
+<h4 id="param-namerequired-binding-name">param name=[required binding name]</h4>
+<p>The value is either:</p>
+<ul>
+<li>required: the binding is mandatorily needed except if the feature
+isn't required (required="false") and in that case it is optional.</li>
+<li>optional: the binding is optional</li>
+</ul>
+<h3 id="feature-nameurnaglrequired-permission">feature name="urn:AGL:required-permission"</h3>
+<p>List of the permissions required by the widget.</p>
+<p>Each required permission must be explicited using a <param> entry.</p>
+<h4 id="param-namerequired-permission-name">param name=[required permission name]</h4>
+<p>The value is either:</p>
+<ul>
+<li>required: the permission is mandatorily needed except if the feature
+isn't required (required="false") and in that case it is optional.</li>
+<li>optional: the permission is optional</li>
+</ul>
+<h3 id="feature-nameurnaglprovided-binding">feature name="urn:AGL:provided-binding"</h3>
+<p>Use this feature for each provided binding of the widget.
+The parameters are:</p>
+<h4 id="param-namename">param name="name"</h4>
+<p>REQUIRED</p>
+<p>The value is the string that must match the binding prefix.
+It must be unique.</p>
+<h4 id="param-namesrc">param name="src"</h4>
+<p>REQUIRED</p>
+<p>The value is the path of the shared library for the binding.</p>
+<h4 id="param-nametype">param name="type"</h4>
+<p>REQUIRED</p>
+<p>Currently it must be <strong><em>application/vnd.agl.binding.v1</em></strong>.</p>
+<h4 id="param-namescope">param name="scope"</h4>
+<p>REQUIRED</p>
+<p>The value indicate the availability of the binidng:</p>
+<ul>
+<li>private: used only by the widget</li>
+<li>public: available to allowed clients as a remote service (requires permission+)</li>
+<li>inline: available to allowed clients inside their binding (unsafe, requires permission+++)</li>
+</ul>
+<h4 id="param-nameneeded-binding">param name="needed-binding"</h4>
+<p>OPTIONAL</p>
+<p>The value is a space separated list of binding's names that the binding needs.</p>
+<h3 id="feature-nameurnagldefined-permission">feature name="urn:AGL:defined-permission"</h3>
+<p>Each required permission must be explicited using a <param> entry.</p>
+<h4 id="param-namedefined-permission-name">param name=[defined permission name]</h4>
+<p>The value is the level of the defined permission.
+Standard levels are: </p>
+<ul>
+<li>system</li>
+<li>platform</li>
+<li>partner</li>
+<li>public</li>
+</ul>
+<p>This level defines the level of accreditation required to get the given
+permission. The accreditions are given by signatures of widgets.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '../../../..';</script>
+        <script data-main="../../../../mkdocs/js/search.js" src="../../../../mkdocs/js/require.js"></script>
+        <script src="../../../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

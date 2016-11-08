@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Quick tutorial - AGL Documentation</title>
+        <link href="../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../../css/highlight.css">
+        <link href="../../../../agl.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../../..">AGL Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../../../..">Home</a>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Developer <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">App framework</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../">Home</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Binder</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../binder/FAQ/">FAQ</a>
+</li>
+            
+<li >
+    <a href="../../binder/afb-application-writing/">Afb application writing</a>
+</li>
+            
+<li >
+    <a href="../../binder/afb-bindings-overview/">Afb bindings overview</a>
+</li>
+            
+<li >
+    <a href="../../binder/afb-bindings-writing/">Afb bindings writing</a>
+</li>
+            
+<li >
+    <a href="../../binder/afb-daemon-vocabulary/">Afb daemon vocabulary</a>
+</li>
+            
+<li >
+    <a href="../../binder/afb-events-guide/">Afb events guide</a>
+</li>
+            
+<li >
+    <a href="../../binder/afb-overview/">Afb overview</a>
+</li>
+            
+<li >
+    <a href="../../binder/afb-tests-overview/">Afb tests overview</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Main</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../afm-system-daemon/">Afm system daemon</a>
+</li>
+            
+<li >
+    <a href="../afm-user-daemon/">Afm user daemon</a>
+</li>
+            
+<li >
+    <a href="../application-framework/">Application framework</a>
+</li>
+            
+<li >
+    <a href="../">Home</a>
+</li>
+            
+<li >
+    <a href="../overview/">Overview</a>
+</li>
+            
+<li class="active">
+    <a href="./">Quick tutorial</a>
+</li>
+            
+<li >
+    <a href="../security-framework/">Security framework</a>
+</li>
+            
+<li >
+    <a href="../widgets/">Widgets</a>
+</li>
+            
+<li >
+    <a href="../writing-config.xml/">Writing config.xml</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Audio</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../audio/">Home</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Sec blueprint</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../sec-blueprint/01-overview/">01 overview</a>
+</li>
+            
+<li >
+    <a href="../../../sec-blueprint/02-plateform-security/">02 plateform security</a>
+</li>
+            
+<li >
+    <a href="../../../sec-blueprint/03-security-concepts/">03 security concepts</a>
+</li>
+            
+<li >
+    <a href="../../../sec-blueprint/04-adversaries/">04 adversaries</a>
+</li>
+            
+<li >
+    <a href="../../../sec-blueprint/04-threat-analysis/">04 threat analysis</a>
+</li>
+            
+<li >
+    <a href="../../../sec-blueprint/06-attack-surfaces/">06 attack surfaces</a>
+</li>
+            
+<li >
+    <a href="../../../sec-blueprint/">Home</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Signaling</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../signaling/architecture/">Architecture</a>
+</li>
+            
+<li >
+    <a href="../../../signaling/">Home</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Getting started</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../user/getting-started/source-code/">Source code</a>
+</li>
+            
+<li >
+    <a href="../../../../user/getting-started/troubleshooting/">Troubleshooting</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Footers</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../user/getting-started/footers/porter-footer/">Porter footer</a>
+</li>
+            
+<li >
+    <a href="../../../../user/getting-started/footers/raspberrypi-footer/">Raspberrypi footer</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Machines</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../user/getting-started/machines/porter/">Porter</a>
+</li>
+            
+<li >
+    <a href="../../../../user/getting-started/machines/qemu/">Qemu</a>
+</li>
+            
+<li >
+    <a href="../../../../user/getting-started/machines/raspberrypi/">Raspberrypi</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../overview/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../security-framework/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/automotive-grade-linux/docs-agl">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#agl-application-framework-a-quick-tutorial">AGL Application Framework: A Quick Tutorial</a></li>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#sample-applications">Sample applications</a></li>
+            <li><a href="#using-the-cli-tool">Using the CLI tool</a></li>
+            <li><a href="#afm-client-a-sample-html5-homescreen">afm-client: a sample HTML5 'Homescreen'</a></li>
+            <li><a href="#afb-client-a-template-for-angular-applications">afb-client: a template for Angular Applications</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="agl-application-framework-a-quick-tutorial">AGL Application Framework: A Quick Tutorial</h1>
+<h2 id="introduction">Introduction</h2>
+<p>This document proposes a quick tutorial to demonstrate the major functionnalities of the AGL Application Framework. For more complete information, please refer to the inline documentation available in the main git repository: 
+https://gerrit.automotivelinux.org/gerrit/#/admin/projects/src/app-framework-main
+https://gerrit.automotivelinux.org/gerrit/#/admin/projects/src/app-framework-binder</p>
+<p>For more information on AGL, please visit:
+https://www.automotivelinux.org/</p>
+<hr />
+<h2 id="sample-applications">Sample applications</h2>
+<p>4 sample applications (.wgt files) are prebuilt and available at the following address:
+https://github.com/iotbzh/afm-widget-examples</p>
+<p>You can get them by cloning this git repository on your desktop (will be useful later in this tutorial):</p>
+<pre><code>$ git clone https://github.com/iotbzh/afm-widget-examples
+</code></pre>
+
+<h2 id="using-the-cli-tool">Using the CLI tool</h2>
+<h3 id="setup-environment">Setup Environment</h3>
+<p>Connect your AGL target board to the network and copy some sample widgets on it through SSH (set BOARDIP with your board IP address) :</p>
+<pre><code>$ cd afm-widget-examples
+$ BOARDIP=1.2.3.4
+$ scp *.wgt root@$BOARDIP:~/
+</code></pre>
+
+<p>Connect through SSH on the target board and check for Application Framework daemons:</p>
+<pre><code>$ ssh root@$BOARDIP
+root@porter:~# ps -ef|grep bin/afm
+afm        409     1  0 13:00 ?        00:00:00 /usr/bin/afm-system-daemon
+root       505   499  0 13:01 ?        00:00:00 /usr/bin/afm-user-daemon
+root       596   550  0 13:22 pts/0    00:00:00 grep afm
+</code></pre>
+<p>We can see that there are two daemons running:
+<em> <strong>afm-system-daemon</strong> runs with a system user 'afm' and is responsible for installing/uninstalling packages
+</em> <strong>afm-user-daemon</strong> runs as a user daemon (currently as root because it's the only real user on the target board) and is responsible for the whole lifecycle of the applications running inside the user session.</p>
+<p>The application framework has a tool running on the Command Line Interface (CLI). Using the <strong>afm-util</strong> command, you can install, uninstall, list, run, stop ... applications. </p>
+<p>To begin, run '<strong>afm-util help</strong>' to get a quick help on commands:</p>
+<pre><code>root@porter:~# afm-util help
+usage: afm-util command [arg]
+
+The commands are:
+
+  list
+  runnables      list the runnable widgets installed
+
+  add wgt
+  install wgt    install the wgt file
+
+  remove id
+  uninstall id   remove the installed widget of id
+
+  info id
+  detail id      print detail about the installed widget of id
+
+  ps
+  runners        list the running instance
+
+  run id
+  start id       start an instance of the widget of id
+
+  kill rid
+  terminate rid       terminate the running instance rid
+
+  stop rid
+  pause rid      stop the running instance rid
+
+  resume rid
+  continue rid   continue the previously rid
+
+  status rid
+  state rid     get status of the running instance rid
+</code></pre>
+<h3 id="install-an-application">Install an application</h3>
+<p>You can then install your first application:</p>
+<pre><code>root@porter:~# afm-util install /home/root/annex.wgt 
+{ "added": "webapps-annex@0.0" }
+</code></pre>
+<p>Let's install a second application:</p>
+<pre><code>root@porter:~# afm-util install /home/root/memory-match.wgt 
+{ "added": "webapps-memory-match@1.1" }
+</code></pre>
+<p>Note that usually, <strong>afm-util</strong> will return a <strong>JSON result</strong>, which is the common format for messages returned by the Application Framework daemons.</p>
+<h3 id="list-installed-applications">List installed applications</h3>
+<p>You can then list all installed applications:</p>
+<pre><code>root@porter:~# afm-util list
+[ { "id": "webapps-annex@0.0", "version": "0.0.10", "width": 0, "height": 0, "name": "Annex", "description": "Reversi\/Othello", "shortname": "", "author": "Todd Brandt &lt;todd.e.brandt@intel.com&gt;" },
+ { "id": "webapps-memory-match@1.1", "version": "1.1.7", "width": 0, "height": 0, "name": "MemoryMatch", "description": "Memory match", "shortname": "", "author": "Todd Brandt &lt;todd.e.brandt@intel.com&gt;" } ]
+</code></pre>
+<p>Here, we can see the two previously installed applications.</p>
+<h3 id="get-information-about-an-application">Get information about an application</h3>
+<p>Let's get some details about the first application:</p>
+<pre><code>root@porter:~# afm-util info webapps-annex@0.0
+{ "id": "webapps-annex@0.0", "version": "0.0.10", "width": 0, "height": 0, "name": "Annex", "description": "Reversi\/Othello", "shortname": "", "author": "Todd Brandt &lt;todd.e.brandt@intel.com&gt;" }
+</code></pre>
+<p>Note that AGL applications are mostly handled by afm-util through their IDs. In our example, the application ID is 'webapps-annex@0.0'.</p>
+<h3 id="start-application">Start application</h3>
+<p>Let's start the first application Annex:</p>
+<pre><code>root@porter:~# afm-util start webapps-annex@0.0
+1
+</code></pre>
+<p>As the application is a HTML5 game, you should then get a webview running with QML on the board display.</p>
+<h3 id="security-context">Security Context</h3>
+<p>The application has been started in the user session, with a dedicated security context, enforced by SMACK. To illustrate this, we can take a look at the running processes and their respective SMACK labels:</p>
+<pre><code>root@porter:~# ps -efZ |grep webapps-annex | grep -v grep
+User::App::webapps-annex        root       716   491  0 13:19 ?        00:00:00 /usr/bin/afb-daemon --mode=local --readyfd=8 --alias=/icons /usr/share/afm/icons --port=12348 --rootdir=/usr/share/afm/applications/webapps-annex/0.0 --token=7D6D2F16 --sessiondir=/home/root/app-data/webapps-annex/.afb-daemon
+User::App::webapps-annex        root       717   491  0 13:19 ?        00:00:00 /usr/bin/qt5/qmlscene http://localhost:12348/index.html?token=7D6D2F16 /usr/bin/web-runtime-webkit.qml
+</code></pre>
+<p>In the previous result, we see that the application is composed of two processes:
+<em> the application binder (afb-daemon)
+</em> the application UI (qmlscene ...)</p>
+<p>While most system processes run with the label 'System', we see that the application runs with a specific SMACK label 'User::App::webapps-annex': this label is used to force the application to follow a Mandatory Access Control (MAC) scheme. This means that those processes run in their own security context, isolated from the rest of the system (and other applications). Global security rules can then be applied to restrict access to all other user or system resources.</p>
+<h3 id="check-running-applications">Check running applications</h3>
+<p>To check for running applications, just run:</p>
+<pre><code>root@porter:~# afm-util ps
+[ { "runid": 1, "state": "running", "id": "webapps-annex@0.0" } ]
+</code></pre>
+<p>The 'runid' is the application instance ID and is used as an argument for the subcommands controlling the application runtime state (kill/stop/resume/status)</p>
+<h3 id="stop-application">Stop application</h3>
+<p>To stop the application that was just started (the one with RUNID 1), just run the stop command:</p>
+<pre><code>root@porter:~# afm-util terminate 1
+true
+</code></pre>
+<p>The application is now stopped, as confirmed by a list of running apps:</p>
+<pre><code>root@porter:~# afm-util ps
+[ ]
+</code></pre>
+<h3 id="uninstall-application">Uninstall application</h3>
+<p>To uninstall an application, simply use its ID:</p>
+<pre><code>root@porter:~# afm-util uninstall webapps-annex@0.0
+true
+</code></pre>
+<p>Then list the installed apps to confirm the removal:</p>
+<pre><code>root@porter:~# afm-util list
+[ { "id": "webapps-memory-match@1.1", "version": "1.1.7", "width": 0, "height": 0, "name": "MemoryMatch", "description": "Memory match", "shortname": "", "author": "Todd Brandt &lt;todd.e.brandt@intel.com&gt;" } ]
+</code></pre>
+<h2 id="afm-client-a-sample-html5-homescreen">afm-client: a sample HTML5 'Homescreen'</h2>
+<p><strong>afm-client</strong> is a HTML5 UI that allows to install/uninstall applications as well as starting/stopping them as already demonstrated with afm-util.</p>
+<p>The HTML5 UI is accessible remotely through this URL: 
+http://[board_ip]:1234/opa?token=132456789</p>
+<h3 id="installing-an-application">Installing an application</h3>
+<p>By clicking on the '<strong>Upload</strong>' button on the right, you can send an application package (WGT file) and install it. Select for example the file '<strong>rabbit.wgt</strong>' that was cloned initially from the git repository afm-widget-examples.</p>
+<p>Then a popup requester ask for a confirmation: 'Upload Application rabbit.wgt ?'. Click on the '<strong>Install</strong>' button.</p>
+<p>You should then see some changes in the toolbar: a new icon appeared, representing the freshly installed application.</p>
+<h3 id="running-an-application">Running an application</h3>
+<p>In the toolbar, click on the button representing the Rabbit application. You'll get a popup asking to:
+<em> start the application
+</em> or get some info about it
+* or uninstall it</p>
+<p>Click on the 'start' item: the application starts and should be visible as a webview on the target board display. Note that at this point, we could also run the application remotely, that is in the same browser as the Homescreen app. By default, the application framework is configured to run applications 'locally' on the board display.</p>
+<h3 id="stopping-an-application">Stopping an application</h3>
+<p>In the Homescreen application, click again on the Rabbit application button, then select 'stop': the application then stops.</p>
+<h3 id="uninstalling-an-application">Uninstalling an application</h3>
+<p>From the same popup menu, you can select 'uninstall' to remove the application from the system. As a consequence, the application icon should disappear from the toolbar.</p>
+<h2 id="afb-client-a-template-for-angular-applications">afb-client: a template for Angular Applications</h2>
+<p>Another package '<strong>afb-client</strong>' is also available for testing.
+This is a sample HTML5 application demonstrating various basic capabilities of the Binder daemon. It can be used by developers as a template to start writing real AGL Applications.</p>
+<p>This application is not available as WGT file yet and it should be started manually without any specific security context:</p>
+<pre><code>root@porter:~# /usr/bin/afb-daemon --mode=remote --port=1235 --token='' --sessiondir=/home/root/.afm-daemon --rootdir=/usr/share/agl/afb-client --alias=/icons:/usr/share/afm/icons
+</code></pre>
+<p>Then you can access it from a browser:
+http://[board_ip]:1235/opa/?token=132456789</p>
+<p>afb-client is a simple application to demonstrate the built-in capabilities of the binder daemon (handling sessions and security tokens, testing POSTs uploads...) and was used during the application framework development to validate the proposed features.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '../../../..';</script>
+        <script data-main="../../../../mkdocs/js/search.js" src="../../../../mkdocs/js/require.js"></script>
+        <script src="../../../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

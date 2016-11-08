@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Afb overview - AGL Documentation</title>
+        <link href="../../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../../css/highlight.css">
+        <link href="../../../../agl.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../../..">AGL Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../../../..">Home</a>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Developer <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">App framework</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../">Home</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Binder</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../FAQ/">FAQ</a>
+</li>
+            
+<li >
+    <a href="../afb-application-writing/">Afb application writing</a>
+</li>
+            
+<li >
+    <a href="../afb-bindings-overview/">Afb bindings overview</a>
+</li>
+            
+<li >
+    <a href="../afb-bindings-writing/">Afb bindings writing</a>
+</li>
+            
+<li >
+    <a href="../afb-daemon-vocabulary/">Afb daemon vocabulary</a>
+</li>
+            
+<li >
+    <a href="../afb-events-guide/">Afb events guide</a>
+</li>
+            
+<li class="active">
+    <a href="./">Afb overview</a>
+</li>
+            
+<li >
+    <a href="../afb-tests-overview/">Afb tests overview</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Main</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../main/afm-system-daemon/">Afm system daemon</a>
+</li>
+            
+<li >
+    <a href="../../main/afm-user-daemon/">Afm user daemon</a>
+</li>
+            
+<li >
+    <a href="../../main/application-framework/">Application framework</a>
+</li>
+            
+<li >
+    <a href="../../main/">Home</a>
+</li>
+            
+<li >
+    <a href="../../main/overview/">Overview</a>
+</li>
+            
+<li >
+    <a href="../../main/quick-tutorial/">Quick tutorial</a>
+</li>
+            
+<li >
+    <a href="../../main/security-framework/">Security framework</a>
+</li>
+            
+<li >
+    <a href="../../main/widgets/">Widgets</a>
+</li>
+            
+<li >
+    <a href="../../main/writing-config.xml/">Writing config.xml</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Audio</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../audio/">Home</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Sec blueprint</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../sec-blueprint/01-overview/">01 overview</a>
+</li>
+            
+<li >
+    <a href="../../../sec-blueprint/02-plateform-security/">02 plateform security</a>
+</li>
+            
+<li >
+    <a href="../../../sec-blueprint/03-security-concepts/">03 security concepts</a>
+</li>
+            
+<li >
+    <a href="../../../sec-blueprint/04-adversaries/">04 adversaries</a>
+</li>
+            
+<li >
+    <a href="../../../sec-blueprint/04-threat-analysis/">04 threat analysis</a>
+</li>
+            
+<li >
+    <a href="../../../sec-blueprint/06-attack-surfaces/">06 attack surfaces</a>
+</li>
+            
+<li >
+    <a href="../../../sec-blueprint/">Home</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Signaling</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../signaling/architecture/">Architecture</a>
+</li>
+            
+<li >
+    <a href="../../../signaling/">Home</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Getting started</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../user/getting-started/source-code/">Source code</a>
+</li>
+            
+<li >
+    <a href="../../../../user/getting-started/troubleshooting/">Troubleshooting</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Footers</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../user/getting-started/footers/porter-footer/">Porter footer</a>
+</li>
+            
+<li >
+    <a href="../../../../user/getting-started/footers/raspberrypi-footer/">Raspberrypi footer</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#">Machines</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../../user/getting-started/machines/porter/">Porter</a>
+</li>
+            
+<li >
+    <a href="../../../../user/getting-started/machines/qemu/">Qemu</a>
+</li>
+            
+<li >
+    <a href="../../../../user/getting-started/machines/raspberrypi/">Raspberrypi</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../afb-events-guide/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../afb-tests-overview/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/automotive-grade-linux/docs-agl">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#overview-of-afb-daemon">Overview of AFB-DAEMON</a></li>
+            <li><a href="#roles-of-afb-daemon">Roles of afb-daemon</a></li>
+            <li><a href="#use-cases-of-the-binder-afb-daemon">Use cases of the binder afb-daemon</a></li>
+            <li><a href="#the-bindings-of-the-binder-afb-daemon">The bindings of the binder afb-daemon</a></li>
+            <li><a href="#launching-the-binder-afb-daemon">Launching the binder afb-daemon</a></li>
+            <li><a href="#future-development-of-afb-daemon">Future development of afb-daemon</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="overview-of-afb-daemon">Overview of AFB-DAEMON</h1>
+<h2 id="roles-of-afb-daemon">Roles of afb-daemon</h2>
+<p>The name <strong>afb-daemon</strong> stands for <em>Application
+Framework Binder Daemon</em>. That is why afb-daemon
+is also named <strong><em>the binder</em></strong>.</p>
+<p><strong>Afb-daemon</strong> is in charge to bind one instance of
+an application to the AGL framework and AGL system.</p>
+<p>On the following figure, you can use a typical use
+of afb-daemon:</p>
+<p><a id="binder-fig-basis"><h4>Figure: binder afb-daemon, basis</h4></a></p>
+<pre><code>. . . . . . . . . . . . . . . . . . . . . . . . . .
+.        Isolated security context                .
+.                                                 .
+.        +------------------------------+         .
+.        |                              |         .
+.        |    A P P L I C A T I O N     |         .
+.        |                              |         .
+.        +--------------+---------------+         .
+.                       |                         .
+.                       |                         .
+.   +-------------------+----------------------+  .
+.   |                            :             |  .
+.   |        b i n d e r         :             |  .
+.   |    A F B - D A E M O N     :  BINDINGS   |  .
+.   |                            :             |  .
+.   +-------------------+----------------------+  .
+.                       |                         .
+. . . . . . . . . . . . | . . . . . . . . . . . . .
+                        |
+                        v
+                   AGL SYSTEM
+</code></pre>
+<p>The application and its companion binder run in secured and isolated
+environment set for them. Applications are intended to access to AGL
+system through the binder.</p>
+<p>The binder afb-daemon serves multiple purposes:</p>
+<ol>
+<li>
+<p>It acts as a gateway for the application to access the system;</p>
+</li>
+<li>
+<p>It acts as an HTTP server for serving files to HTML5 applications;</p>
+</li>
+<li>
+<p>It allows HTML5 applications to have native extensions subject
+to security enforcement for accessing hardware ressources or
+for speeding parts of algorithm.</p>
+</li>
+</ol>
+<h2 id="use-cases-of-the-binder-afb-daemon">Use cases of the binder afb-daemon</h2>
+<p>This section tries to give a better understanding of the binder
+usage through several use cases.</p>
+<h3 id="remotely-running-application">Remotely running application</h3>
+<p>One of the most interresting aspect of using the binder afb-daemon
+is the ability to run applications remotely. This feature is
+possible because the binder afb-daemon implements native web
+protocols.</p>
+<p>So the <a href="#binder-fig-1">figure binder, basis</a> would become
+when the application is run remotely:</p>
+<p><a id="binder-fig-remote"><h4>Figure: binder afb-daemon and remotely running application</h4></a></p>
+<pre><code>             +------------------------------+
+             |                              |
+             |    A P P L I C A T I O N     |
+             |                              |
+             +--------------+---------------+
+                            |
+                       ~ ~ ~ ~ ~ ~
+                      :  NETWORK  :
+                       ~ ~ ~ ~ ~ ~
+                            |
+. . . . . . . . . . . . . . | . . . . . . . . . . . . . .
+. Isolated security         |                           .
+.   context                 |                           .
+.                           |                           .
+.     . . . . . . . . . . . . . . . . . . . . . . . .   .
+.     .                                             .   .
+.     .               F I R E W A L L               .   .
+.     .                                             .   .
+.     . . . . . . . . . . . . . . . . . . . . . . . .   .
+.                           |                           .
+.       +-------------------+----------------------+    .
+.       |                            :             |    .
+.       |    A F B - D A E M O N     :   BINDINGS  |    .
+.       |                            :             |    .
+.       +-------------------+----------------------+    .
+.                           |                           .
+. . . . . . . . . . . . . . | . . . . . . . . . . . . . .
+                            |
+                            v
+                       AGL SYSTEM
+</code></pre>
+<h3 id="adding-native-features-to-html5qml-applications">Adding native features to HTML5/QML applications</h3>
+<p>Applications can provide with their packaged delivery a binding.
+That binding will be instanciated for each application instance.
+The methods of the binding will be accessible by applications and
+will be excuted within the security context.</p>
+<h3 id="offering-services-to-the-system">Offering services to the system</h3>
+<p>It is possible to run the binder afb-daemon as a daemon that provides the
+API of its bindings.</p>
+<p>This will be used for:</p>
+<ol>
+<li>
+<p>offering common APIs</p>
+</li>
+<li>
+<p>provide application's services (services provided as application)</p>
+</li>
+</ol>
+<p>In that case, the figure showing the whole aspects is</p>
+<p><a id="binder-fig-remote"><h4>Figure: binder afb-daemon for services</h4></a></p>
+<pre><code>. . . . . . . . . . . . . . . . . . . . . . 
+.  Isolated security context application  . 
+.                                         . 
+.    +------------------------------+     . 
+.    |                              |     . 
+.    |    A P P L I C A T I O N     |     . 
+.    |                              |     . 
+.    +--------------+---------------+     .     . . . . . . . . . . . . . . . . . . . . . .
+.                   |                     .     .        Isolated security context A      .
+.                   |                     .     .                                         .
+. +-----------------+------------------+  .     . +------------------------------------+  .
+. |                        :           |  .     . |                        :           |  .
+. |      b i n d e r       :           |  .     . |      b i n d e r       :  service  |  .
+. |  A F B - D A E M O N   : BINDINGS  |  .     . |  A F B - D A E M O N   : BINDINGS  |  .
+. |                        :           |  .     . |                        :     A     |  .
+. +-----------------+------------------+  .     . +-----------------+------------------+  .
+.                   |                     .     .                   |                     .
+. . . . . . . . . . | . . . . . . . . . . .     . . . . . . . . . . | . . . . . . . . . . .
+                    |                                               |
+                    v                                               v
+         ================================================================================
+                                     D - B U S   &amp;   C Y N A R A
+         ================================================================================
+                    ^                                               ^
+                    |                                               |
+. . . . . . . . . . | . . . . . . . . . . .     . . . . . . . . . . | . . . . . . . . . . .
+.                   |                     .     .                   |                     .
+. +-----------------+------------------+  .     . +-----------------+------------------+  .
+. |                        :           |  .     . |                        :           |  .
+. |      b i n d e r       :  service  |  .     . |      b i n d e r       :  service  |  .
+. |  A F B - D A E M O N   : BINDINGS  |  .     . |  A F B - D A E M O N   : BINDINGS  |  .
+. |                        :     B     |  .     . |                        :     C     |  .
+. +------------------------------------+  .     . +------------------------------------+  .
+.                                         .     .                                         .
+.        Isolated security context B      .     .        Isolated security context C      .
+. . . . . . . . . . . . . . . . . . . . . .     . . . . . . . . . . . . . . . . . . . . . .
+</code></pre>
+<p>For this case, the binder afb-daemon takes care to attribute one single session
+context to each client instance. It allows bindings to store and retrieve data
+associated to each of its client.</p>
+<h2 id="the-bindings-of-the-binder-afb-daemon">The bindings of the binder afb-daemon</h2>
+<p>The binder can instanciate bindings. The primary use of bindings
+is to add native methods that can be accessed by applications
+written with any language through web technologies ala JSON RPC.</p>
+<p>This simple idea is declined to serves multiple purposes:</p>
+<ol>
+<li>
+<p>add native feature to applications</p>
+</li>
+<li>
+<p>add common API available by any applications</p>
+</li>
+<li>
+<p>provide customers services</p>
+</li>
+</ol>
+<p>A specific document explains how to write an afb-daemon binder binding:
+<a href="../afb-binding-writing.html">HOWTO WRITE a BINDING for AFB-DAEMON</a></p>
+<h2 id="launching-the-binder-afb-daemon">Launching the binder afb-daemon</h2>
+<p>The launch options for binder <strong>afb-daemon</strong> are:</p>
+<pre><code>  --help
+
+    Prints help with available options
+
+  --version
+
+    Display version and copyright
+
+  --verbose
+
+    Increases the verbosity, can be repeated
+
+  --port=xxxx
+
+    HTTP listening TCP port  [default 1234]
+
+  --rootdir=xxxx
+
+    HTTP Root Directory [default $AFBDIR or else $HOME/.AFB]
+
+  --rootbase=xxxx
+
+    Angular Base Root URL [default /opa]
+
+    This is used for any application of kind OPA (one page application).
+    When set, any missing document whose url has the form /opa/zzz
+    is translated to /opa/#!zzz
+
+  --rootapi=xxxx
+
+    HTML Root API URL [default /api]
+
+    The bindings are available within that url.
+
+  --alias=xxxx
+
+    Maps a path located anywhere in the file system to the
+    a subdirectory. The syntax for mapping a PATH to the
+    subdirectory NAME is: --alias=/NAME:PATH.
+
+    Example: --alias=/icons:/usr/share/icons maps the
+    content of /usr/share/icons within the subpath /icons.
+
+    This option can be repeated.
+
+  --apitimeout=xxxx
+
+    binding API timeout in seconds [default 20]
+
+    Defines how many seconds maximum a method is allowed to run.
+    0 means no limit.
+
+  --cntxtimeout=xxxx
+
+    Client Session Timeout in seconds [default 3600]
+
+  --cache-eol=xxxx
+
+    Client cache end of live [default 100000 that is 27,7 hours]
+
+  --sessiondir=xxxx
+
+    Sessions file path [default rootdir/sessions]
+
+  --session-max=xxxx
+
+    Maximum count of simultaneous sessions [default 10]
+
+  --ldpaths=xxxx
+
+    Load bindings from given paths separated by colons
+    as for dir1:dir2:binding1.so:... [default = $libdir/afb]
+
+    You can mix path to directories and to bindings.
+    The sub-directories of the given directories are searched
+    recursively.
+
+    The bindings are the files terminated by '.so' (the extension
+    so denotes shared object) that contain the public entry symbol.
+
+  --binding=xxxx
+
+    Load the binding of given path.
+
+  --token=xxxx
+
+    Initial Secret token to authenticate.
+
+    If not set, no client can authenticate.
+
+    If set to the empty string, then any initial token is accepted.
+
+  --mode=xxxx
+
+    Set the mode: either local, remote or global.
+
+    The mode indicate if the application is run locally on the host
+    or remotely through network.
+
+  --readyfd=xxxx
+
+    Set the #fd to signal when ready
+
+    If set, the binder afb-daemon will write "READY=1\n" on the file
+    descriptor whose number if given (/proc/self/fd/xxx).
+
+  --dbus-client=xxxx
+
+    Transparent binding to a binder afb-daemon service through dbus.
+
+    It creates an API of name xxxx that is implemented remotely
+    and queried via DBUS.
+
+  --dbus-server=xxxx
+
+    Provides a binder afb-daemon service through dbus.
+
+    The name xxxx must be the name of an API defined by a binding.
+    This API is exported through DBUS.
+
+  --foreground
+
+    Get all in foreground mode (default)
+
+  --daemon
+
+    Get all in background mode
+</code></pre>
+<h2 id="future-development-of-afb-daemon">Future development of afb-daemon</h2>
+<ul>
+<li>
+<p>The binder afb-daemon would launch the applications directly.</p>
+</li>
+<li>
+<p>The current setting of mode (local/remote/global) might be reworked to a
+mechanism for querying configuration variables.</p>
+</li>
+<li>
+<p>Implements "one-shot" initial token. It means that after its first
+authenticated use, the initial token is removed and no client can connect
+anymore.</p>
+</li>
+<li>
+<p>Creates some intrinsic APIs.</p>
+</li>
+<li>
+<p>Make the service connection using WebSocket not DBUS.</p>
+</li>
+<li>
+<p>Management of targetted events.</p>
+</li>
+<li>
+<p>Securisation of LOA.</p>
+</li>
+<li>
+<p>Integration of the protocol JSON-RPC for the websockets.</p>
+</li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '../../../..';</script>
+        <script data-main="../../../../mkdocs/js/search.js" src="../../../../mkdocs/js/require.js"></script>
+        <script src="../../../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
